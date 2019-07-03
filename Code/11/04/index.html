@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>隐藏表格中的列</title>
+
+    <style>
+        @media only screen and (max-width: 800px) {
+            table td:nth-child(4),
+            table th:nth-child(4) {display: none;}
+        }
+        @media only screen and (max-width: 640px) {
+            table td:nth-child(4),
+            table th:nth-child(4),
+            table td:nth-child(6),
+            table th:nth-child(6),
+            table td:nth-child(8),
+            th:nth-child(8){display: none;}
+        }
+    </style>
+</head>
+<body style="background-image: url(bg_01.png);color:white">
+
+<table width="100%" cellspacing="1" cellpadding="5" border="1">
+    <thead>
+    <tr>
+        <th>序号</th>
+        <th>职位名称</th>
+        <th>招聘人数</th>
+        <th>工作地点</th>
+        <th>学历要求</th>
+        <th>年龄要求</th>
+        <th>薪资</th>
+    </tr>
+    </thead>
+    <tbody align="center">
+    <tr>
+        <td>1</td>
+        <td>Java高级工程师</td>
+        <td>1</td>
+        <td>北京</td>
+        <td>本科</td>
+        <td>30岁以上</td>
+        <td>面议</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Java初级工程师</td>
+        <td>3</td>
+        <td>长春</td>
+        <td>本科</td>
+        <td>25岁以上</td>
+        <td>面议</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>前端UI设计师</td>
+        <td>2</td>
+        <td>长春</td>
+        <td>本科</td>
+        <td>25岁以上</td>
+        <td>面议</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>PHP高级工程师</td>
+        <td>2</td>
+        <td>北京</td>
+        <td>本科</td>
+        <td>30岁以上</td>
+        <td>面议</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>产品经理</td>
+        <td>1</td>
+        <td>长春</td>
+        <td>本科</td>
+        <td>28岁以上</td>
+        <td>面议</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>测试工程师</td>
+        <td>3</td>
+        <td>北京</td>
+        <td>本科</td>
+        <td>28岁以上</td>
+        <td>面议</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>高级用户研究经理</td>
+        <td>1</td>
+        <td>北京</td>
+        <td>本科</td>
+        <td>30岁以上</td>
+        <td>面议</td>
+    </tr>
+    <tr>
+        <td>8</td>
+        <td>高级Android开发工程师</td>
+        <td>3</td>
+        <td>长春</td>
+        <td>本科</td>
+        <td>30岁以上</td>
+        <td>面议</td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

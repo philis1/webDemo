@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link href="mr-style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="cont">
+
+    <form>
+        <label class="txt">昵称：<input type="text"> </label><!--单行文本框-->
+        <label class="txt">密码：<input type="password"> </label><!--密码框-->
+        <label class="sure">确认密码：<input type="password"> </label>
+        <!--单选按钮-->
+        <div>性别：<label><input type="radio" name="sex">男</label> <label><input type="radio" name="sex">女</label></div>
+        <div class="birth">生日：
+            <!--下拉菜单-->
+            <select>
+                <option>公历</option>
+            </select>
+            <select>
+                <option>1996年</option>
+            </select>
+            <select>
+                <option>月</option>
+            </select>
+            <select>
+                <option>日</option>
+            </select>
+        </div>
+        <div class="addr">所在地：
+            <select>
+                <option>中国</option>
+            </select>
+            <select>
+                <option>吉林</option>
+            </select>
+            <select>
+                <option>长春</option>
+            </select>
+        </div>
+        <label class="sure">手机号码：<input type="text"> </label>
+        <p>可通过该手机号码快速找回密码</p>
+        <p>中国大陆以外地区手机号码<span>点击这里</span></p>
+        <input type="button" value="立即注册">
+        <!--多选按钮-->
+        <label class="sel"><input type="checkbox">同时开通QQ空间</label>
+        <label class="sel"><input type="checkbox">我已阅读并同意服务提条款和隐私政策</label>
+    </form>
+</div>
+</body>
+</html>

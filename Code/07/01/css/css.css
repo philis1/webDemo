@@ -1,0 +1,20 @@
+@charset "utf-8";
+/*css document*/
+td {                               /*设置表格列中内容的内间距*/
+	padding: 10px 20px;
+}
+.img+tr td {                       /*设置图片下方第一行文字的字体*/
+	font-size: 20px;
+	font-weight: bold
+}
+.img+tr~tr td>:last-child {      /*设置文字向右对齐*/
+	float: right;
+}
+.img+tr+tr td>:last-child {      /*设置“免费”的边框*/
+	border: 1px solid #00ff00;
+	border-radius: 3px;          /*设置圆角边框*/
+	padding: 4px 10px;           /*设置内间距*/
+}
+img {
+	width: 260px;               /*设置图片宽度*/
+}

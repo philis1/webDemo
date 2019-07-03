@@ -1,0 +1,66 @@
+@charset "utf-8";
+/*css document*/
+*{                                   /*清除元素默认的内外间距*/
+    padding: 0;
+    margin: 0;
+}
+.cont{                               /*设置页面的整体大小*/
+    width: 600px;                    /*设置页面的整体宽度*/
+    margin: 20px auto;               /*设置外间距*/
+}
+h2{                                  /*设置页面标题的样式*/
+    padding:4px 6px;                 /*设置内间距*/
+    
+    border-bottom:1px solid #eee ;   /*设置下边框*/
+    margin-left: -150px;             /*设置左间距*/
+}
+.txt,.sure,.sel{                     /*设置单行文本框、单选框以及多选按钮的样式*/
+    margin-top: 10px;                /*设置向上的外间距*/
+    display: block;                  /*设置显示方式*/
+    font-size: 18px;                 /*设置字体大小*/
+}
+.txt input,.sure input{              /*设置单行文本框的样式*/
+    width: 250px;                    /*设置宽度*/
+    height: 35px;                    
+}
+.sure{                               /*设置注册按钮的样式*/
+    margin-left: -35px;              /*设置向左的外间距*/
+}
+.cont>form>div{                      /*设置单选按钮以及下拉菜单的样式*/
+    font-size: 18px;                 /*设置字号*/
+    margin-top: 20px;                /*设置向上的外间距*/
+}
+.cont>form>div>label{                    
+    margin-left: 20px;                    
+}
+.birth select{                       /*设置生日部分的下拉菜单的样式*/
+    padding: 5px 5px 5px 0;          /*设置内间距*/
+}
+.addr{                               /*设置所在地的样式*/
+    margin-left: -18px;              /*设置向左外间距*/
+}
+.addr select{                        /*设置所在地的下拉菜单的样式*/
+    padding: 5px 23px 5px 0;         /*设置内间距*/
+}
+p{                                   /*设置提示文字的样式*/
+    color: #909090;                  /*设置字体颜色*/
+    font-size: 12px;                 /*设置字号*/
+    margin: 10px 0 0 50px;           /*设置外间距*/
+}
+p span{                              /*设置“点击这里”的样式*/
+    color: #0040D0;                  /*设置文字颜色*/
+    margin-left: 70px;               /*设置外间距*/
+}
+[type="button"]{                     /*设置按钮的样式*/
+    background: #00ff00;             /*设置背景颜色*/
+    color: #fff;                     /*设置文字颜色*/
+    border: none;                    /*设置边框*/
+    margin: 20px 50px;               /*设置外间距*/
+    font-size: 24px;                 /*设置字号*/
+    padding: 10px 78px;              /*设置内间距*/
+}
+.sel input{                          /*设置多选按钮的样式*/
+    width: 25px;                     /*设置大小*/
+    height: 25px;                    /*设置页面的整体大小*/
+    margin: auto 10px auto 47px;     /*设置外间距*/
+}

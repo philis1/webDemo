@@ -1,0 +1,1460 @@
+<!DOCTYPE html>
+<html class="cye-lm">
+<head>
+    <meta charset="utf-8">
+    <title>体系课程</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords"
+          content="明日学院，明日科技，教育，在线课程，优质视频，视频教程，Java，JavaScript，php，C#，Visual Basic，Visual C++，Oracle，JavaWeb，Asp.net">
+    <meta name="description"
+          content="明日学院是吉林省明日科技有限公司研发的在线教育平台，该平台面向学习者提供大量优质视频教程：Java、JavaWeb、JavaScript、VC++、php、C#、Asp.net、Oracle、Visual Basic等，并提供良好的线上服务。">
+    <link rel="stylesheet" type="text/css" href="Public/css/base.css">
+    <link rel="stylesheet" type="text/css" href="Public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Public/css/common.css">
+    <link type="text/css" href="Public/css/head-style.css?1514512772" rel="stylesheet">
+    <style type="text/css">
+        body, html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .member_day {
+            width: 1063px;
+            height: 648px;
+            margin: auto;
+            position: absolute;
+            -webkit-animation: bg 5s linear 1 alternate;
+            -moz-animation: bg 5s linear 1 alternate;
+            -o-animation: bg 5s linear 1 alternate;
+            -ms-animation: bg 5s linear 1 alternate;
+            animation: bg 5s linear 1 alternate;
+            z-index: 101;
+            margin-left: 50%;
+        }
+
+        @keyframes bg {
+            0% {
+                top: -653px;
+            }
+            10% {
+                top: -653px;
+            }
+            25% {
+                top: 0px;
+            }
+            50% {
+                top: -12px;
+            }
+            75% {
+                top: 0px;
+            }
+            95% {
+                top: 0px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+
+        .cash_go {
+            width: 119px;
+            height: 30px;
+            overflow: hidden;
+            position: absolute;
+            bottom: 100px;
+            left: -15%;
+        }
+
+        .member_day span {
+            margin-left: -50%;
+        }
+
+        .c_close {
+            width: 33px;
+            height: 33px;
+            overflow: hidden;
+            position: absolute;
+            right: 72%;
+            top: 92px;
+        }
+    </style>
+    <script type="text/javascript" src="Public/js/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript" src="Public/js/bluebird.min.js"></script>
+    <script type="text/javascript" src="Public/js/html2canvas.min.js"></script>
+    <script type="text/javascript" src="Public/js/layer.js"></script>
+    <link rel="stylesheet" href="http://www.mingrisoft.com/Public/static/layer/skin/layer.css"
+          id="layui_layer_skinlayercss" style="">
+    <script type="text/javascript" src="Public/js/fun.js"></script>
+    <script type="text/javascript" src="Public/js/chklogin.js"></script>
+    <script type="text/javascript" src="Public/js/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="Public/js/toTop.js"></script>
+</head>
+<body style="overflow-x: hidden;">
+<div id="body_content">
+    <!--更改开始-->
+    <div class="mrit-index-child">
+        <div class="mrit-child-content">
+            <!--开始-->
+            <div class="mrit-child-user">
+                <div class="mrit-header-login">
+                    <div class="top-top-in-center" style="position:relative;" id="center">
+                        <div class="mrit-header-logina" style="color:#666; font-weight:bold;"><a href="/login.html"
+                                                                                                 style="color:#666;">登录</a>
+                            |<a href="/register.html" style="color:#666;"> 注册</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--结束-->
+            <div class="logo_box_img">
+                <a href="/index.html" style="float:left; margin-right:10px;"><img src="Public/images/logo.png"
+                                                                                  alt="明日学院"></a>
+                <!--搜索开始-->
+                <div class="search_box">
+                    <div class="top-nav-search">
+                        <div class="top-nav-list" onmouseover="this.style.display='block';"
+                             onmouseout="this.style.display='none';">
+                            <div class="top-list-content">
+                                <div class="top-nav-list-li"><a id="course" href="javascript:;">课程</a></div>
+                                <div class="top-nav-list-li"><a id="book" href="javascript:;">读书</a></div>
+                                <div class="top-nav-list-li"><a id="forum" href="javascript:;">社区</a></div>
+                            </div>
+                        </div>
+                        <form name="searchForm" id="searchForm" method="post" action="/Index/Video/searchVideo.html"
+                              onsubmit="return chkSearch(this)">
+                            <div class="search-nav search-nav-top" style=" margin-top:7px;">
+                                <span class="top-search-course">课程</span>
+                            </div>
+                            <input type="text" name="keyword" class="top-nav-search-input" placeholder="请输入内容">
+                            <input type="hidden" name="search_type" id="search_type" value="0">
+                            <input type="image" src="Public/images/search_a.png" class="search_box_img"
+                                   onfocus="this.blur()">
+                        </form>
+                    </div>
+                </div>
+                <!--搜索结束-->
+                <div class="mrit-child-title">
+                    <div class="mingri_book f_r App_out">
+                        <!--<a href="http://www.mingribook.com" target="_blank" ><i></i>明日图书</a>-->
+                        <a href="http://shop573124214.taobao.com" target="_blank" class="a_download"><i></i>淘宝店铺</a>
+                        <div class="App_download">
+                            <img src="Public/images/course_05.png" alt="">
+                            APP下载
+                            <!--APP二维码开始-->
+                            <div class="App_wx">
+                                <div class="App_code"><img src="Public/images/APP_code.png" alt="APP二维码"></div>
+                            </div>
+                            <!--APP二维码结束-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--更改结束-->
+    <!--导航开始-->
+    <div class="mrit-index-child" style="height:auto;">
+        <div class="nav_box">
+            <div class="mar_1200">
+                <ul>
+                    <li>
+                        <a href="/index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="/selfCourse.html" style="color:#fff;background:#309bd1;">课程</a>
+                    </li>
+                    <li>
+                        <a href="/book.html">读书</a>
+                    </li>
+
+
+                    <li>
+                        <a href="/bbs.html">社区</a>
+                    </li>
+                    <li>
+                        <a href="/servicecenter.html">服务中心</a>
+                    </li>
+                </ul>
+                <span class="nav_box_new">
+							<a href="/Vip/joins.html"><img src="Public/images/nav_vip_a.png" width="22" height="22"
+                                                           alt="">VIP会员</a>
+						</span>
+            </div>
+        </div>
+    </div>
+    <!--导航结束-->
+    <!--下拉导航开始-->
+    <div class="mrit-index-fixed">
+        <div class="mrit-index-child" style="height:auto;">
+            <div class="nav_box">
+                <div class="mar_1200" style="overflow:visible;">
+                    <ul>
+                        <li>
+                            <a href="/index.html">首页</a>
+                        </li>
+                        <li>
+                            <a href="/selfcourse.html" style="color:#fff;background:#309bd1;">课程</a>
+                        </li>
+                        <li>
+                            <a href="/book.html">读书</a>
+                        </li>
+                        <li>
+                            <a href="/bbs.html">社区</a>
+                        </li>
+                        <li>
+                            <a href="/servicecenter.html">服务中心</a>
+                        </li>
+                    </ul>
+                    <!--搜索开始-->
+                    <div class="mrit-index-search">
+                        <div class="top-nav-all" style="position:relative;">
+                            <div class="top-nav-next" onmouseover="this.style.display='block';"
+                                 onmouseout="this.style.display='none';">
+                                <div class="top-next-content">
+                                    <div class="top-nav-next-li"><a id="course" href="javascript:;"
+                                                                    style="color:#b2b2b2;">课程</a></div>
+                                    <div class="top-nav-next-li"><a id="books" href="javascript:;"
+                                                                    style="color:#b2b2b2;">读书</a></div>
+                                    <div class="top-nav-next-li"><a id="forum" href="javascript:;"
+                                                                    style="color:#b2b2b2;">社区</a></div>
+                                </div>
+                            </div>
+                            <div class="top-search-next">
+                                <form name="searchForm" id="searchForm" method="post"
+                                      action="/Index/Video/searchVideo.html" onsubmit="return chkSearch(this)">
+                                    <div class="search-nav search-nav-next" style="margin-top:2px;">
+                                        <span class="top-search-course">课程</span>
+                                    </div>
+                                    <input type="text" name="keyword" class="top-nav-search-next" placeholder="请输入内容">
+                                    <input type="hidden" name="search_type" id="search_type" value="0">
+                                    <input type="image" src="Public/images/search-n.png" onfocus="this.blur()"
+                                           class="top-nav-search-icon" style="margin-top:2px;">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--搜索结束-->
+                    <span class="nav_box_new">
+								<a href="/Vip/joins.html"><img src="Public/images/nav_vip_a.png" width="22"
+                                                               height="22">VIP会员</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--下拉导航结束-->
+    <link rel="stylesheet" type="text/css" href="Public/css/loginwindow.css">
+    <script type="text/javascript">
+        var chknameurl = "/Index/User/chkname.html";
+        var loginurl = "/Index/User/chkLogin.html";
+    </script>
+    <script type="text/javascript" src="Public/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="Public/js/loginwindow.js"></script>
+    <style type="text/css">
+        #body_content {
+            padding-bottom: 220px;
+        }
+    </style>
+    <script type="text/javascript">
+        function addOrDelVideo(pid, id) {
+            var parentDiv = $("#child_catalog_" + pid + "_" + id);
+            if (parentDiv.children("div[id=childVideo]").length > 0) {
+                $("#child_img_" + id).attr("src", 'Public/images/ca_right.png');
+                parentDiv.children("div[id=childVideo]").remove();
+            } else {
+                $.post("/Index/Video/getChildVideo.html", {id: id}, function (data) {
+                    if (data == 0) {
+                        alert("非法提交数据！");
+                    } else {
+                        $("div[id^=child_catalog_]").children("div[id=childVideo]").remove();
+                        $("#child_img_" + id).attr("src", 'Public/images/ca_down.png');
+                        $("#child_catalog_" + pid + "_" + id).append(data);
+                    }
+                });
+            }
+        }
+
+        $(function () {
+            var isCollect = '';
+            var value, flag;
+            if (isCollect == 1) {
+                value = "已收藏";
+                $("#collect").parent().removeClass("course-list-second-interest");
+                $("#collect").parent().addClass("course-list-second-already-interest");
+                flag = 0;
+                $("#collect").mouseover(function () {
+                    $(this).text("取消收藏");
+                    $("#collect").parent().removeClass("course-list-second-already-interest");
+                    $("#collect").parent().addClass("course-list-second-interest");
+                });
+                $("#collect").mouseout(function () {
+                    $(this).text("已收藏");
+                    $("#collect").parent().removeClass("course-list-second-interest");
+                    $("#collect").parent().addClass("course-list-second-already-interest");
+                });
+            } else {
+                flag = 1;
+                value = "收藏此课程";
+                $("#collect").parent().removeClass("course-list-second-already-interest");
+                $("#collect").parent().addClass("course-list-second-interest");
+            }
+            $("#collect").click(function () {
+                var username = "";
+                if (username != "") {
+                    collect(flag);
+                } else {
+                    plslogin();
+                }
+            })
+            $("#collect").text(value);
+        });
+
+        function collect(flag) {
+            var action;
+            var cbtnObj = $("#collect");
+            if (flag == 1) {
+                action = "/Index/Ajax/collect.html";
+                $.post(action, {course_id: "64"}, function (data) {
+                    if (data == -1) {
+                        layer.msg("登录超时，请重新登录！", {time: 1000}, function () {
+                            window.location.href = "/Index/User/login.html";
+                        });
+                    } else if (data == -2) {
+                        layer.msg("您的账号已在其他地点登录！", {time: 1000}, function () {
+                            window.location.href = "/Index/User/login.html";
+                        });
+                    } else if (data == 1) {
+                        cbtnObj.text("已收藏");
+                        cbtnObj.parent().removeClass("course-list-second-interest");
+                        cbtnObj.parent().addClass("course-list-second-already-interest");
+                        cbtnObj.mouseover(function () {
+                            $(this).text("取消收藏");
+                            cbtnObj.parent().removeClass("course-list-second-already-interest");
+                            cbtnObj.parent().addClass("course-list-second-interest");
+                        });
+                        cbtnObj.mouseout(function () {
+                            $(this).text("已收藏");
+                            cbtnObj.parent().removeClass("course-list-second-interest");
+                            cbtnObj.parent().addClass("course-list-second-already-interest");
+                        });
+                        cbtnObj.unbind("click");
+                        cbtnObj.bind("click", function () {
+                            collect(0);
+                        })
+                    }
+                });
+            } else {
+                action = "/Index/Ajax/discollect.html";
+                $.post(action, {course_id: "64"}, function (data) {
+                    if (data == -1) {
+                        layer.msg("登录超时，请重新登录！", {time: 1000}, function () {
+                            window.location.href = "/Index/User/login.html";
+                        });
+                    } else if (data == -2) {
+                        layer.msg("您的账号已在其他地点登录！", {time: 1000}, function () {
+                            window.location.href = "/Index/User/login.html";
+                        });
+                    } else if (data == 1) {
+                        cbtnObj.text("收藏此课程");
+                        cbtnObj.parent().removeClass("course-list-second-already-interest");
+                        cbtnObj.parent().addClass("course-list-second-interest");
+                        cbtnObj.unbind("click");
+                        cbtnObj.unbind("mouseover");
+                        cbtnObj.unbind("mouseout");
+                        cbtnObj.bind("click", function () {
+                            collect(1);
+                        })
+                    }
+                });
+            }
+        }
+
+        function showOrHide(id) {
+            var obj = $("#child_catalog_" + id);
+            if (obj.css("display") == "none") {
+                $("#chapter_img_" + id).attr("src", 'Public/images/gray_close.png');
+                obj.slideDown("fast");
+            } else {
+                $("#chapter_img_" + id).attr("src", 'Public/images/gray_open.png');
+                obj.slideUp("fast");
+
+            }
+        }
+
+        function checkRoot(id) {
+            $.post("/Index/Ajax/checkRoot.html", {"id": id}, function (data) {
+                if (data == -1) {
+                    layer.msg("登录超时，请重新登录！", {time: 1000}, function () {
+                        window.location.href = "/Index/User/login.html";
+                    });
+                } else if (data == -2) {
+                    layer.msg("您的账号已在其他地点登录！", {time: 1000}, function () {
+                        window.location.href = "/Index/User/login.html";
+                    });
+                } else {
+                    var info = eval("(" + data + ")");
+                    for (i in info) {
+                        if (i == 'success') {
+                            window.location.href = info[i];
+                        } else {
+                            layer.msg('您没有权限下载此资料，请升级会员级别');
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+    <link rel="stylesheet" type="text/css" href="Public/css/tcode/Qaptcha.jquery.css">
+    <link rel="stylesheet" type="text/css" href="Public/css/tcode/loading.css">
+    <script type="text/javascript" src="Public/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="Public/js/jquery.ui.touch.js"></script>
+    <style type="text/css">
+        .QapTcha .bgSlider {
+            width: 294px;
+        }
+
+        .QapTcha .bgMasks {
+            width: 294px;
+        }
+
+        #iQapTcha-error {
+            left: -94px;
+            position: absolute;
+            top: 39px;
+        }
+
+        .input-box {
+            overflow: visible;
+            width: 294px;
+        }
+
+        .QapTcha .Slider {
+            position: absolute;
+            top: 0px;
+        }
+    </style>
+    <script>
+        var qurl = "/Index/Index/checkSlider.html";
+        var setQapTchaurl = "/Index/User/setQapTcha.html";
+        var chkQapTchaurl = "/Index/User/chkQapTcha.html";
+        var chkloginurl = "/Index/User/chkLogin.html";
+    </script>
+    <script type="text/javascript" src="Public/js/Qaptcha.jquery.js"></script>
+    <!--弹出登录开始-->
+    <div class="page-wrap" id="loginwindow" style="display: none;">
+        <div class="pop-login">
+            <div class="pop-login-bottom">
+                <!--开始-->
+                <div class="pop-login-all">
+                    <form id="login_form" name="login_form" action="" method="post" class="form" autocomplete="off"
+                          style="padding:0px;" novalidate="novalidate">
+                        <input type="password" name="dispassword" autocomplete="off" style="display:none;">
+                        <div class="pop-login-form">
+                            <div class="pop-login-li">
+                                <input class="required pop-login-username" type="text" id="username" name="username"
+                                       placeholder="用户名/手机/邮箱" aria-required="true">
+                            </div>
+                            <div class="pop-login-li">
+                                <input class=" required pop-login-password" type="password" maxlength="30"
+                                       name="passwords" id="passwords" placeholder="请输入密码" aria-required="true">
+                                <a href="/Index/PassWord/index.html" target="_blank" class="pop-login-forget">忘记密码?</a>
+                            </div>
+                            <!--<div class="pop-login-li" style="margin-top:28px;">-->
+                            <!--<input class="required pop-login-code" type="text" name="code" id="code"  placeholder="请输入右侧验证码"/>-->
+                            <!--<div class="login-indentifying-code" style="width:auto;"> <img src="/Index/User/verify.html"  id="imgcode" onclick="this.src=this.src+'?'+Math.random()" style=" height:38px; width:85px; float:left;">-->
+                            <!--<a href="javascript:;" onclick="refreshCode()" class="refreshCode"></a>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <div class="input-box" style="height:50px; position:relative; margin-top:10px;"
+                                 id="code_container">
+                                <!--<span class="input-name">验证码<h></h>：</span>-->
+                                <!--<input class="safe-number cf required finput-box-code" type="text" name="code" id="code"  placeholder="验证码" autocomplete="off"/>-->
+                                <!--<div class="login-indentifying-code" style="width:auto;">-->
+                                <!--<img src="/Index/User/verify.html"  id="imgcode" onClick="this.src=this.src+'?'+Math.random()" style=" height:39px; width:95px; float:left;">-->
+                                <!--<a href="javascript:;" onClick="refreshCode()" class="refreshCode"></a>-->
+                                <!--</div>-->
+                                <!--<span class="input-name cf">滑动验证：</span>-->
+                                <div id="QapTcha" class="QapTcha" style=" margin-top:0px;">
+                                    <div class="bgSlider">
+                                        <div class="Slider ui-draggable ui-draggable-handle"></div>
+                                        <div class="bgMasks"></div>
+                                        <div class=" TxtStatus dropError TxtStatusFont">请按住滑块，拖动到最右侧</div>
+                                    </div>
+                                    <div id="Icons"></div>
+                                    <div class="clr"></div>
+                                    <input name="iQapTcha" value="" type="hidden" id="iQapTcha"></div>
+
+                            </div>
+                            <div class="sevenday" style="padding-top:10px;">
+                                <div class="i-check" style="float:left;  margin-right:8px; margin-top:0px;">
+                                    <input type="checkbox" name="cookie" value="1" id="popa" style="cursor:pointer;"
+                                           checked="">
+                                    <label for="popa"></label>
+                                </div>
+                                <span class="pop-login-font">
+                                7天内免登录
+                                <span class="pop-login-none">
+                                没有账号？<a href="/register.html" target="_blank" class="pop-login-link">立即注册</a>
+                            	</span>
+                            </span>
+                            </div>
+                            <div class="pop-login-out">
+                                <input type="submit" value="登录" class="pop-login-button" onfocus="this.blur()">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="pop-login-txt">其他方式登录</div>
+                    <div class="pop-login-qq">
+                        <a class="third-login" href="/Index/User/quickLogin/type/qq.html"></a>
+                    </div>
+                    <div class="pop-login-other">
+                        <a href="javascript:;" data-st="http://www.mingrisoft.com/User/quickLogin/type/weixin.html"
+                           onclick="showLoginWindow(this)"></a>
+                    </div>
+                    <div class="pop-login-wb">
+                        <a class="third-login" href="/Index/User/quickLogin/type/sina.html"></a>
+                    </div>
+                </div>
+                <!--结束-->
+            </div>
+        </div>
+    </div>
+    <!--弹出登录结束-->
+    <script type="text/javascript" src="Public/js/jsencrypt.min.js"></script>
+    <script type="text/javascript">
+        $('.third-login').click(function () {
+            var url = $(this).attr('href');
+            layer.open({
+                type: 2,
+                title: false,
+                shadeClose: true,
+                area: ['800px', '440px'],
+                content: url
+            });
+            return false;
+        });
+
+        //供子窗口调用
+        function callback(message) {
+            if (message == '登录成功') {
+                layer.msg(message, {time: 1000}, function () {
+                    window.location.reload();
+                });
+            } else {
+                layer.msg(message, {time: 2000});
+            }
+        }
+
+        $(function () {
+            $('#QapTcha').QapTcha();
+        })
+    </script>
+    <div class="course-list">
+        <div class="course-list-second">
+            <div class="course-list-second-image">
+                <!--<img src="/Public/uploads/adv/64/small_adv.png" width="281" height="160" alt="" />-->
+                <font class="course-list-font">Java入门第一季</font><br><font>
+                <!--<a href="#" class="course-list-both">浏览完整学习体系</a>--></font>
+            </div>
+            <div class="course-list-second-center">
+                <div class="course-list-second-center-state">
+                    <div class="course-list-second-center-state-bottom">3763</div>
+                    <div class="course-list-second-center-state-top">学习人数</div>
+                </div>
+                <div class="course-list-second-center-hour">
+                    <div class="course-list-second-center-hour-bottom">10小时9分15秒</div>
+                    <div class="course-list-second-center-hour-top">课程时长</div>
+                </div>
+                <div class="course-list-second-center-study">
+                    <div class="course-list-second-center-study-bottom">
+                        0分0秒
+                    </div>
+                    <div class="course-list-second-center-study-top">学习时长</div>
+                </div>
+            </div>
+
+            <div class="course-list-second-interest"><a href="javascript:;" id="collect">收藏此课程</a></div>
+            <div class="course-list-second-study">
+                <a href="/video/707.html" target="_blank">继续学习</a>
+            </div>
+        </div>
+
+        <div class="course-list-content">
+            <div class="course-list-content-left">
+                <div class="course-list-content-left-top">
+                    <div class="course-list-arrow"><img src="Public/images/arrow-image.png" id="cata_img" width="20"
+                                                        height="20" alt="" style="margin-top:6px;"></div>
+                    <div class="course-list-write">授课老师</div>
+                </div>
+                <div class="teacher-content">
+                    <div class="teacher-head"><a href="/User/homepage_teacher/user_id/476.html"><img
+                            src="Public/images/201606141716411108.png" width="95" height="95" alt=""></a>
+                    </div>
+                    <div class="teacher-write">
+                        <div class="teacher-name"><a href="/User/homepage_teacher/user_id/476.html" style="color:#666;">根号申</a>
+                        </div>
+                        <div class="teacher-info">金牌讲师</div>
+                        <div class="course-list-content-left-teacher-hour"><img src="Public/images/clock-image.png"
+                                                                                width="14" height="14" alt=""
+                                                                                style=" margin-top:15px; margin-right:10px;">10小时9分15秒
+                            &nbsp;&nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div class="course-list-content-left-top">
+                    <div class="course-list-arrow"><img src="Public/images/arrow-image.png" id="cata_img" width="20"
+                                                        height="20" alt="" style="margin-top:6px;"></div>
+                    <div class="course-list-write">课程概述</div>
+                </div>
+
+                <div class="course-list-introduce">Java是一种可以撰写跨平台应用程序的面向对象的程序设计语言。Java
+                    技术具有卓越的通用性、高效性、平台移植性和安全性，广泛应用于PC、数据中心、游戏控制台、科学超级计算机、移动电话和互联网，同时拥有全球最大的开发者专业社群。
+                </div>
+            </div>
+            <div class="course-list-content-right">
+                <div class="course-list-second-classify"><font style="float:left;font-size:20px;">课程提纲</font>
+                    <a href="/systemCatalog/64.html" style="background-color:#19A0F5; color:#fff;">全部</a>
+                    <a href="/systemCatalog/64/v.html">视频</a>
+                    <a href="/systemCatalog/64/e.html">练习</a>
+                    <!--<a href="javascript:;" >测试</a>-->
+                </div>
+                <div class="course-list-second-section-contents">
+                    <div class="course-list-second-section-contents-li">
+                        <div class="chapters"
+                             onclick="showOrHide('583','Public/images/gray_close.png','Public/images/gray_open.png')"
+                             id="583">
+                            <div class="course-list-second-section-contents-li-top">
+                                <div class="course-list-name">第一章 初识Java</div>
+                                <div class="course-list-second-add-subtract">
+                                    <div class="course-list-icon">
+                                        <img src="Public/images/gray_close.png" width="14"
+                                             style="height:auto; margin-top:18px;" alt="" id="chapter_img_583">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="child_catalog_583" style="padding-top:45px;">
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/707.html" target="_blank">1.1
+                                            一分钟学一章</a></div>
+                                        <div class="course-list-right"><a href="/video/707.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/708.html" target="_blank">1.2
+                                            什么是Java</a></div>
+                                        <div class="course-list-right"><a href="/video/708.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/709.html" target="_blank">1.3
+                                            Java的版本及API文档</a></div>
+                                        <div class="course-list-right"><a href="/video/709.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/710.html" target="_blank">1.4
+                                            搭建开发环境</a></div>
+                                        <div class="course-list-right"><a href="/video/710.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/711.html" target="_blank">1.5
+                                            第一个Java程序</a></div>
+                                        <div class="course-list-right"><a href="/video/711.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/712.html" target="_blank">1.6
+                                            Eclipse的下载与使用</a></div>
+                                        <div class="course-list-right"><a href="/video/712.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/713.html" target="_blank">1.7
+                                            程序调试</a></div>
+                                        <div class="course-list-right"><a href="/video/713.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/9.html" target="_blank">1.8 练习——输出笑脸</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/9.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/10.html" target="_blank">1.9 练习——输出数学公式</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/10.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/19.html" target="_blank">1.10 练习——软件启动项</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/19.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chapters"
+                             onclick="showOrHide('584','/Public/images/gray_close.png','/Public/images/gray_open.png')"
+                             id="584">
+                            <div class="course-list-second-section-contents-li-top">
+                                <div class="course-list-name">第二章 Java编码规范</div>
+                                <div class="course-list-second-add-subtract">
+                                    <div class="course-list-icon">
+                                        <img src="/Public/images/gray_close.png" width="14"
+                                             style="height:auto; margin-top:18px;" alt="" id="chapter_img_584">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="child_catalog_584" style="padding-top:45px;">
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/714.html" target="_blank">2.1
+                                            代码注释</a></div>
+                                        <div class="course-list-right"><a href="/video/714.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/715.html" target="_blank">2.2
+                                            编码规范</a></div>
+                                        <div class="course-list-right"><a href="/video/715.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chapters"
+                             onclick="showOrHide('585','/Public/images/gray_close.png','/Public/images/gray_open.png')"
+                             id="585">
+                            <div class="course-list-second-section-contents-li-top">
+                                <div class="course-list-name">第三章 变量和常量</div>
+                                <div class="course-list-second-add-subtract">
+                                    <div class="course-list-icon">
+                                        <img src="/Public/images/gray_close.png" width="14"
+                                             style="height:auto; margin-top:18px;" alt="" id="chapter_img_585">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="child_catalog_585" style="padding-top:45px;">
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/716.html" target="_blank">3.1
+                                            标识符与关键字</a></div>
+                                        <div class="course-list-right"><a href="/video/716.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/717.html" target="_blank">3.2
+                                            变量</a></div>
+                                        <div class="course-list-right"><a href="/video/717.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/718.html" target="_blank">3.3
+                                            常量</a></div>
+                                        <div class="course-list-right"><a href="/video/718.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/719.html" target="_blank">3.4
+                                            整数类型</a></div>
+                                        <div class="course-list-right"><a href="/video/719.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/720.html" target="_blank">3.5
+                                            浮点类型</a></div>
+                                        <div class="course-list-right"><a href="/video/720.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/721.html" target="_blank">3.6
+                                            字符类型</a></div>
+                                        <div class="course-list-right"><a href="/video/721.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/722.html" target="_blank">3.7
+                                            布尔类型</a></div>
+                                        <div class="course-list-right"><a href="/video/722.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left"><a href="/video/723.html" target="_blank">3.8
+                                            数据类型转换</a></div>
+                                        <div class="course-list-right"><a href="/video/723.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/12.html" target="_blank">3.9 练习——输出字符画</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/12.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/13.html" target="_blank">3.10 练习——打印汇款单</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/13.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/14.html" target="_blank">3.11 练习——模拟移动充值</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/14.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/15.html" target="_blank">3.12 练习——输出天气预报</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/15.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/16.html" target="_blank">3.13 练习——输出象棋口诀</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/16.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/17.html" target="_blank">3.14 练习——模拟儿童购票</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/17.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course-list-second-section-contents-li-bottom">
+                                <div class="course-list-second-section-contents-li-bottomli">
+                                    <!--开始-->
+                                    <!--结束-->
+                                    <!--添加开始-->
+                                    <div class="course-list-free">免费</div>
+                                    <!--添加结束-->
+                                    <div class="course-list-second-section-arrow"><img
+                                            src="/Public/images/list-icon.png" width="18" height="17" alt=""
+                                            style=" position:relative; left:-10px;"></div>
+                                    <div class="course-list-second-section-write">
+                                        <div class="course-list-left">
+                                            <a href="/exercises/18.html" target="_blank">3.15 练习——输出列车时刻表</a>
+                                        </div>
+                                        <div class="course-list-right"><a href="/exercises/18.html"
+                                                                          target="_blank">开始学习</a>
+                                        </div>
+                                    </div>
+                                    <div class="course-list-second-section-circle"><img src="/Public/images/empty.png"
+                                                                                        width="16" height="14" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="course-list-related">
+            <div class="course-list-related-top">
+                <div class="course-list-related-top-arrow"><img src="/Public/images/arrow-image.png" width="20"
+                                                                height="20" alt="" style="margin-top:6px;"></div>
+                <div class="course-list-related-top-write">相关课程</div>
+                <div class="course-list-related-top-write-more"></div>
+            </div>
+            <div class="course-list-related-bottom">
+                <div class="course-list-related-bottom-li">
+                    <div class="course-list-related-bottom-li-top"><a href="#"> <img
+                            src="Public/images/5809d4edc5b48.jpg" width="266" height="129" alt=""></a>
+                    </div>
+                    <div class="course-list-related-bottom-li-bottom"><a href="#"
+                                                                         target="_blank">图书管理系统</a></div>
+                </div>
+                <div class="course-list-related-bottom-li">
+                    <div class="course-list-related-bottom-li-top"><a href="#" > <img
+                            src="Public/images/5809dac33f825.jpg" width="266" height="129" alt=""></a>
+                    </div>
+                    <div class="course-list-related-bottom-li-bottom"><a href="#"
+                                                                         target="_blank">进销存管理系统</a></div>
+                </div>
+                <div class="course-list-related-bottom-li">
+                    <div class="course-list-related-bottom-li-top"><a href="#"> <img
+                            src="Public/images/58096bb82073a.jpg" width="266" height="129" alt=""></a>
+                    </div>
+                    <div class="course-list-related-bottom-li-bottom"><a href="#"
+                                                                         target="_blank">医药管理系统</a></div>
+                </div>
+                <div class="course-list-related-bottom-li">
+                    <div class="course-list-related-bottom-li-top"><a href="#"> <img
+                            src="Public/images/5809d60f79c66.jpg" width="266" height="129" alt=""></a>
+                    </div>
+                    <div class="course-list-related-bottom-li-bottom"><a href="/video/951.html"
+                                                                         target="_blank">企业门户网站</a></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="tbox">
+        <div class="phone_other">
+            <a href="javascript:" id="phone_time" class="mobilePic"></a> <a
+                href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzkzODA3NzAwNl80NDYzMDVfNDAwNjc1MTA2Nl8yXw"
+                id="pinglun" target="_blank"></a>
+            <a href="#" target="_blank" id="xiangguan"></a>
+            <a id="gotop" href="javascript:;" style="display: none;"></a>
+        </div>
+    </div>
+
+    <style type="text/css">dl {
+        margin-right: 45px;
+    }</style>
+
+    <div class="bottom-page-last-a">
+    </div>
+    <!--改开始-->
+    <div class="bottom-page">
+        <div class="bottom-page-in">
+            <!--学习群二维码开始-->
+            <div class="code_news">
+                <img src="Public/images/code_news.jpg" width="114" height="116" alt="">
+                <span>明日微信公众号</span>
+            </div>
+            <!--学习群二维码结束-->
+            <!--第一部分开始-->
+            <div class="bottom-content">
+                <div class="bottom-service">
+                    <div class="bottom-service-img">
+                        <img src="Public/images/phoneIcon.png" width="28" height="28" alt="">
+                    </div>
+                    <div class="bottom-service-txt">客服热线(每日9:00-17:00)</div>
+                </div>
+                <div class="bottom-service-phone">400 675 1066</div>
+                <div class="bottom-service-icon" style=" height:40px; padding-left:10px; margin-top:5px;">
+                    <div class="bottom-service-icon-li" style="border-radius:50%;">
+                        <a href="http://weibo.com/5897586383/profile?topnav=1&amp;wvr=6" target="_blank">
+                            <img src="Public/images/b-wbIcon.png" width="41" height="48" alt="">
+                        </a>
+                    </div>
+                    <div class="weixin" onmouseover="this.className = 'weixin on';"
+                         onmouseout="this.className = 'weixin';">
+                        <a href="javascript:;" style="cursor:default;">
+                            <img src="/Public/images/wxIcon.png" width="41" height="48" alt="">
+                        </a>
+                        <div class="weixin_nr">
+                            <img src="/Public/images/wx-bottom.png" width="120" height="129" alt=""
+                                 style="margin-top:10px;">
+                        </div>
+                    </div>
+                    <div class="bottom-service-icon-li bottom_email" style="margin-right:13px;">
+                        <img src="/Public/images/newIcon.png" width="41" height="48" alt="">
+                        <div class="bottom_email_text">mingrisoft@mingrisoft.com</div>
+                    </div>
+                    <div class="mail_bottom" onmouseover="this.className = 'mail_bottom on';"
+                         onmouseout="this.className = 'mail_bottom';" style="display:none;">
+                        <a href="javascript:;" style="cursor:default;">
+                            <img src="/Public/images/phone-sicon.png" width="41" height="48" alt="">
+                        </a>
+                        <div class="mail_bottom_nr">
+                            <img src="/Public/images/wx-bottom.png" width="120" height="129" alt=""
+                                 style="margin-top:10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第一部分结束-->
+            <!--第二部分开始-->
+            <div id="footer_d">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="/selfcourse.html">课程学习</a></dd>
+                    <dd><a href="/bbs.html">技术问答</a></dd>
+                    <dd><a href="/Index/ServiceCenter/credits.html">学分获得</a></dd>
+                    <!--<dd><a href="#">社区讨论</a></dd>
+                    <dd><a href="#">资源下载</a></dd>-->
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <!--<dd><a href="#">技术问答</a></dd>
+                    <dd><a href="#">交费方式</a></dd>-->
+                    <dd><a href="/Index/ServiceCenter/vip.html">VIP权益</a></dd>
+                    <dd><a href="/Index/ServiceCenter/course_need.html">课程需求</a></dd>
+                    <dd>
+                        <a href="/myVip/flag/free.html">免费VIP</a></dd>
+                </dl>
+                <dl>
+                    <dt>交流合作</dt>
+                    <dd><a href="/Index/ServiceCenter/aboutus.html">关于我们</a></dd>
+                    <dd><a href="/Index/ServiceCenter/recruitment.html">人才招聘</a></dd>
+                    <!--<dd><a href="/Index/ServiceCenter/contactus.html">联系我们</a></dd>-->
+                    <dd><a href="/Index/ServiceCenter/feedback.html">意见反馈</a></dd>
+                </dl>
+                <!--<dd><a href="#">友情链接</a></dd>-->
+
+                <dl>
+                    <dt>其他</dt>
+                    <!--<dd><a href="#">人工服务</a></dd>
+                    <dd><a href="#">课程需求</a></dd>-->
+                    <dd><a href="/Index/ServiceCenter/copyright.html">版权声明</a></dd>
+                    <dd><a href="/Index/ServiceCenter/term.html">服务条款</a></dd>
+                    <dd><a href="http://test.mingrisoft.com/download.php">下载APP</a></dd>
+                </dl>
+            </div>
+            <!--第二部分结束-->
+        </div>
+        <div class="bottom-page-last">
+            吉林省明日科技有限公司
+            <h></h>
+            Copyright ©2007-2017, mingrisoft.com, All Rights Reserved
+            <h></h>
+            吉ICP备10002740号
+            <h></h>
+            吉公网安备22010202000132
+        </div>
+    </div>
+    <!--改结束-->
+</div>
+</body>
+</html>

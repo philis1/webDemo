@@ -1,0 +1,61 @@
+
+@charset "utf-8";
+/*css document*/
+*{                        /*清除页面中默认的内外边距*/
+    padding: 0;
+    margin: 0;
+}
+.cont{                    /*设置页面的整体样式*/
+    width: 1470px;        /*设置页面的整体大小*/
+    margin: 20px auto;    /*设置页面的整体外边距*/
+}
+aside,.right,.right dl{
+    float: left;         /*设置侧边导航以及积分商品的浮动样式*/
+}
+aside{                  /*设置侧边导航的宽度*/
+    width: 200px;
+}
+aside ul li{            /*设置侧边导航的列表项的样式*/
+    list-style: none;   /*清除默认的列表项的样式*/
+    height: 50px;       /*设置列表项的高度*/
+    font-size: 18px;    /*设置侧边导航的列表项的字体*/
+    line-height: 50px;  /*设置侧边导航的列表项的行高*/
+    text-align: center; /*设置侧边导航的列表项的文字对齐方式*/
+    color: #666;        /*设置侧边导航的列表项的列表项的字体颜色*/
+    border: 1px solid #EDF1F7;/*设置侧边导航的列表项的边框*/
+    border-top: none;   /*清除列表项的上边框*/
+}
+aside ul li:hover{      /*鼠标滑过列表项的样式*/
+    color: #447BD3;     /*改变文字颜色*/
+}
+aside ul :first-child{  /*设置侧边导航中第一个列表项的样式*/
+    color: #447BD3;     /*改变字体颜色*/
+    border-top: 1px solid #EDF1F7;  /*改变其上边框*/
+    border-left: 3px solid #447BD3; /*改变其左边框*/
+}
+.right{                 /*设置右边商品的总宽度*/
+    width: 1150px;
+}
+.right dl{              /*设置定义列表的样式*/
+    border: 1px solid #e6e6e6;/*添加边框*/
+    margin: 20px 10px;  /*改变其外边距*/
+}
+.right dt img{      /*设置商品图片的样式*/
+    padding: 20px;/*设置其内边距*/
+}
+dd{                 /*设置文字内容的样式*/
+    background: #f0f2f7;/*设置文字的背景颜色*/
+    padding: 20px 10px;/*设置文字的内边距*/
+}
+dt+dd{            /*设置第一行文字内容的样式*/
+    padding-bottom: 10px;
+}
+dd :first-child{/*设置学分的样式*/
+    color: #f00;
+}
+dd :last-child{   /*设置“去兑换”的样式*/
+    float: right;/*设置向右浮动*/
+    color: #447BD3;
+    padding: 4px 6px;
+    border: 1px solid #447BD3;
+}

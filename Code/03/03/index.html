@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--指定页面编码格式-->
+    <meta charset="UTF-8">
+    <!--指定页头信息-->
+    <title>设置兴趣</title>
+    <style>
+        ol, ul {
+            list-style: none outside none;
+        }
+        .main-category {
+            display: none;
+            text-align: center;
+        }
+        .main-category-content {
+            width: 1200px;
+            height: 600px;
+            margin: auto;
+            padding: 0 60px;
+            box-sizing: border-box;
+
+            z-index: 4000;
+            border-radius: 3px;
+        }
+
+        .main-category-tt {
+            font-size: 32px;
+            height: 32px;
+            line-height: 32px;
+            color: #23b8ff;
+            text-align: left;
+        }
+
+        .main-category-subtitle {
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 16px;
+            color: #999;
+        }
+
+        .main-category-list {
+            margin-left: -15px;
+        }
+
+        .main-category-item {
+            width: 350px;
+            float: left;
+            text-align: left;
+            margin-left: 15px;
+            color: #0e5fca;
+        }
+
+        .main-category-item h3 {
+            font-size: 22px;
+            line-height: 1;
+        }
+
+        .small-category {
+            margin-top: 10px;
+        }
+
+        .small-category:before, .small-category:after {
+            content: "";
+            display: table;
+        }
+
+        .small-category-item {
+            float: left;
+            padding: 7px 10px;
+            border: 1px solid;
+            border-radius: 80px;
+            cursor: pointer;
+            margin: 10px 6px 0 0;
+            line-height: 14px;
+        }
+
+        .main-category-list:after {
+            clear: both;
+        }
+
+        .main-category-list:before, .main-category-list:after {
+            content: "";
+            display: table;
+        }
+
+        .main-category-item--2 {
+            color: #820e2d;
+        }
+
+        .main-category-item--3 {
+            color: #1b7b15;
+        }
+
+        .main-category-item--4 {
+            color: #b7610b;
+        }
+    </style>
+</head>
+<body style="background: url(1.jpg) no-repeat">
+<section class="main-category has-interest" id="js-intrest-select" style="display: block;">
+    <div class="main-category-content">
+        <h2 class="main-category-tt">
+            设置学习兴趣
+            <span class="main-category-subtitle">我们帮你挑选内容</span>
+        </h2>
+        <ul class="main-category-list">
+            <li class="main-category-item main-category-item--1">
+                <div class="main-category-hover">
+                    <h3>IT互联网</h3>
+                    <ul class="small-category">
+
+                        <li class="small-category-item">互联网产品</li>
+
+                        <li class="small-category-item">编程语言</li>
+
+                        <li class="small-category-item">移动开发</li>
+
+                        <li class="small-category-item">前端</li>
+
+                        <li class="small-category-item">游戏开发</li>
+
+                        <li class="small-category-item">软件测试</li>
+
+                        <li class="small-category-item">云计算大数据</li>
+
+                        <li class="small-category-item">网络运维</li>
+
+                        <li class="small-category-item">IT认证</li>
+
+                        <li class="small-category-item">嵌入式</li>
+
+                        <li class="small-category-item">网络营销</li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="main-category-item main-category-item--2">
+                <div class="main-category-hover">
+                    <h3>设计创作</h3>
+                    <ul class="small-category">
+
+                        <li class="small-category-item">平面设计</li>
+
+                        <li class="small-category-item">UI设计</li>
+
+                        <li class="small-category-item">设计软件</li>
+
+                        <li class="small-category-item">游戏动画设计</li>
+
+                        <li class="small-category-item">绘画创作</li>
+
+                        <li class="small-category-item">影视后期设计</li>
+
+                        <li class="small-category-item">环境艺术设计</li>
+
+                        <li class="small-category-item">工业产品设计</li>
+
+                        <li class="small-category-item">服装设计</li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="main-category-item main-category-item--3">
+                <div class="main-category-hover">
+                    <h3>语言留学</h3>
+                    <ul class="small-category">
+
+                        <li  class="small-category-item">托福</li>
+
+                        <li  class="small-category-item">英语口语</li>
+
+                        <li  class="small-category-item">雅思</li>
+
+                        <li  class="small-category-item">新概念英语</li>
+
+                        <li  class="small-category-item">国内考试</li>
+
+                        <li  class="small-category-item">K12留学</li>
+
+                        <li  class="small-category-item">研究生留学</li>
+
+                        <li  class="small-category-item">日语</li>
+
+                        <li  class="small-category-item">出国留学</li>
+
+                        <li  class="small-category-item">实用英语</li>
+
+                        <li  class="small-category-item">韩语</li>
+
+                        <li  class="small-category-item">小语种</li>
+
+                    </ul>
+                </div>
+            </li>
+            <li class="main-category-item main-category-item--4">
+                <div class="main-category-hover">
+                    <h3>职业考证</h3>
+                    <ul class="small-category">
+
+                        <li class="small-category-item">职业技能</li>
+
+                        <li class="small-category-item">公考求职</li>
+
+                        <li class="small-category-item">法学院</li>
+
+                        <li class="small-category-item">教师考试</li>
+
+                        <li class="small-category-item">财会金融</li>
+
+                        <li class="small-category-item">建造工程</li>
+
+                        <li class="small-category-item">医药卫生</li>
+
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>

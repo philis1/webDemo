@@ -1,0 +1,30 @@
+@charset "utf-8";
+/* CSS Document */
+.mr-cont{
+	height: 360px;
+	width: 915px;
+	margin: 20px auto;
+	border: 1px solid #f00;
+	background: rgba(181, 181, 255,0.65);
+}
+.type{
+	width: 285px;
+	height: 180px;
+	float: left;
+}
+.type div{
+	width: 350px;
+	height: 30px;
+	margin: 30px 0 0 60px;
+}
+.textarea div{
+	float: left;
+	margin-left: 60px;
+}
+.textarea div p{
+	margin: 15px 0;
+}
+.textarea div textarea{
+	height: 90px;
+	width: 350px;
+}

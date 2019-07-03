@@ -1,0 +1,45 @@
+@charset "utf-8";
+/*css document*/
+*{                               /*清除页面中默认的内外间距*/
+    padding: 0;
+    margin: 0;
+}
+.cont{                           /*设置页面整体样式*/
+    width: 1470px;               /*设置宽度*/
+    margin: 0 auto;              /*设置外间距*/
+}
+dl{                              /*设置定义列表的总体样式*/
+    float: left;                 /*设置浮动*/
+    margin:30px 20px;            /*设置外间距*/
+    text-align: left;            /*设置文字对齐方式*/
+    border:1px solid #cacaca;    /*设置边框*/
+}
+dl dt img{                       /*设置图片的样式*/
+    height: 180px;               /*设置图片的样式*/
+    width: 320px;                        
+}
+dl:hover {                       /*设置鼠标放置在课程上时的样式*/
+    border: 1px solid #447BD3;   /*添加边框*/
+}
+dl dd{                           /*设置文字部分公共样式*/
+    padding: 9px 10px 20px;      /*设置内间距*/
+    color: #666;                 /*设置文字颜色*/
+}
+dl dt+dd{                        /*设置课程名称的样式*/
+    color: #000;                 /*设置文字颜色*/
+    padding-top: 10px;           /*设置向上的内间距*/
+    font-size: 20px;             /*设置字号*/
+    font-weight: bold;           /*设置文字粗细*/
+    margin-left: 10px;           /*设置向左的外间距*/
+}
+dl dd span{                      /*设置每门课程的第二、三行描述文字第二部分的样式*/
+    display: block;              /*设置显示方式*/
+    float: right;                /*设置浮动方式*/
+    text-align: center;          /*设置对齐方式*/
+}
+.free{                           /*设置“免费”文字的样式*/
+    margin-right: 7px;           /*设置向右的外间距*/
+    border: 1px solid #0f0;      /*设置边框*/
+    border-radius: 5px;          /*设置圆角边框*/
+    width: 60px;                 /*设置宽度*/
+}

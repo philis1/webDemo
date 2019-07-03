@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html class="cye-lm">
+<head>
+    <meta charset="utf-8">
+    <title>课程</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE11">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache, must-revalidate">
+    <meta http-equiv="expires" content="0">
+    <meta name="keywords"
+          content="明日学院，明日科技，教育，在线课程，优质视频，视频教程，Java，JavaScript，php，C#，Visual Basic，Visual C++，Oracle，JavaWeb，Asp.net">
+    <meta name="description"
+          content="明日学院是吉林省明日科技有限公司研发的在线教育平台，该平台面向学习者提供大量优质视频教程：Java、JavaWeb、JavaScript、VC++、php、C#、Asp.net、Oracle、Visual Basic等，并提供良好的线上服务。">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link type="text/css" href="css/head-style.css" rel="stylesheet">
+    <style type="text/css">
+        body, html {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .member_day {
+            width: 1063px;
+            height: 648px;
+            margin: auto;
+            position: absolute;
+            -webkit-animation: bg 5s linear 1 alternate;
+            -moz-animation: bg 5s linear 1 alternate;
+            -o-animation: bg 5s linear 1 alternate;
+            -ms-animation: bg 5s linear 1 alternate;
+            animation: bg 5s linear 1 alternate;
+            z-index: 101;
+            margin-left: 50%;
+        }
+
+        @keyframes bg {
+            0% {
+                top: -653px;
+            }
+            10% {
+                top: -653px;
+            }
+            25% {
+                top: 0px;
+            }
+            50% {
+                top: -12px;
+            }
+            75% {
+                top: 0px;
+            }
+            95% {
+                top: 0px;
+            }
+            100% {
+                top: 0px;
+            }
+        }
+
+        .cash_go {
+            width: 119px;
+            height: 30px;
+            overflow: hidden;
+            position: absolute;
+            bottom: 100px;
+            left: -15%;
+        }
+
+        .member_day span {
+            margin-left: -50%;
+        }
+
+        .c_close {
+            width: 33px;
+            height: 33px;
+            overflow: hidden;
+            position: absolute;
+            right: 72%;
+            top: 92px;
+        }
+    </style>
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+
+    <script type="text/javascript" src="js/onehour/bluebird.min.js"></script>
+    <script type="text/javascript" src="js/onehour/html2canvas.min.js"></script>
+    <script type="text/javascript" src="static/layer/layer.js"></script>
+    <link rel="stylesheet" href="http://www.mingrisoft.com/Public/static/layer/skin/layer.css"
+          id="layui_layer_skinlayercss" style="">
+    <script type="text/javascript" src="js/fun.js"></script>
+    <script type="text/javascript" src="js/chklogin.js"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js"></script>
+    <script type="text/javascript" src="js/toTop.js"></script>
+</head>
+<body style="overflow-x: hidden;">
+<div id="body_content">
+    <!--更改开始-->
+    <div class="mrit-index-child">
+        <div class="mrit-child-content">
+            <!--开始-->
+            <div class="mrit-child-user">
+                <div class="mrit-header-login">
+                    <div class="top-top-in-center" style="position:relative;" id="center">
+                        <div class="mrit-header-logina" style="color:#666; font-weight:bold;"><a href="#"
+                                                                                                 style="color:#666;">登录</a>
+                            |<a href="#" style="color:#666;"> 注册</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--结束-->
+            <div class="logo_box_img">
+                <a href="#" style="float:left; margin-right:10px;"><img src="images/logo.png"
+                                                                                  alt="明日学院"></a>
+                <!--搜索开始-->
+                <div class="search_box">
+                    <div class="top-nav-search">
+                        <div class="top-nav-list" onmouseover="this.style.display='block';"
+                             onmouseout="this.style.display='none';">
+                            <div class="top-list-content">
+                                <div class="top-nav-list-li"><a id="course" href="javascript:;">课程</a></div>
+                                <div class="top-nav-list-li"><a id="book" href="javascript:;">读书</a></div>
+                                <div class="top-nav-list-li"><a id="forum" href="javascript:;">社区</a></div>
+                            </div>
+                        </div>
+                        <form name="searchForm" id="searchForm" method="post" action="#"
+                              onsubmit="return chkSearch(this)">
+                            <div class="search-nav search-nav-top" style=" margin-top:7px;">
+                                <span class="top-search-course">课程</span>
+                            </div>
+                            <input type="text" name="keyword" class="top-nav-search-input" placeholder="请输入内容">
+                            <input type="hidden" name="search_type" id="search_type" value="0">
+                            <input type="image" src="images/search_a.png" class="search_box_img"
+                                   onfocus="this.blur()">
+                        </form>
+                    </div>
+                </div>
+                <!--搜索结束-->
+                <div class="mrit-child-title">
+                    <div class="mingri_book f_r App_out">
+                        <a href="http://shop573124214.taobao.com" target="_blank" class="a_download"><i></i>淘宝店铺</a>
+                        <div class="App_download">
+                            <img src="images/course_05.png" alt="">
+                            APP下载
+                            <!--APP二维码开始-->
+                            <div class="App_wx">
+                                <div class="App_code"><img src="images/APP_code.png" alt="APP二维码"></div>
+                            </div>
+                            <!--APP二维码结束-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--更改结束-->
+    <!--导航开始-->
+    <div class="mrit-index-child" style="height:auto;">
+        <div class="nav_box">
+            <div class="mar_1200">
+                <ul>
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color:#fff;background:#309bd1;">课程</a>
+                    </li>
+                    <li>
+                        <a href="#">读书</a>
+                    </li>
+
+
+                    <li>
+                        <a href="#">社区</a>
+                    </li>
+                    <li>
+                        <a href="#">服务中心</a>
+                    </li>
+                </ul>
+                <span class="nav_box_new">
+							<a href="#"><img src="images/nav_vip_a.png" width="22" height="22"
+                                                           alt="">VIP会员</a>
+						</span>
+            </div>
+        </div>
+    </div>
+    <!--导航结束-->
+    <!--下拉导航开始-->
+    <div class="mrit-index-fixed">
+        <div class="mrit-index-child" style="height:auto;">
+            <div class="nav_box">
+                <div class="mar_1200" style="overflow:visible;">
+                    <ul>
+                        <li>
+                            <a href="#">首页</a>
+                        </li>
+                        <li>
+                            <a href="#" style="color:#fff;background:#309bd1;">课程</a>
+                        </li>
+                        <li>
+                            <a href="#">读书</a>
+                        </li>
+                        <li>
+                            <a href="#">社区</a>
+                        </li>
+                        <li>
+                            <a href="#">服务中心</a>
+                        </li>
+                    </ul>
+                    <!--搜索开始-->
+                    <div class="mrit-index-search">
+                        <div class="top-nav-all" style="position:relative;">
+                            <div class="top-nav-next" onmouseover="this.style.display='block';"
+                                 onmouseout="this.style.display='none';">
+                                <div class="top-next-content">
+                                    <div class="top-nav-next-li"><a id="course" href="javascript:;"
+                                                                    style="color:#b2b2b2;">课程</a></div>
+                                    <div class="top-nav-next-li"><a id="books" href="javascript:;"
+                                                                    style="color:#b2b2b2;">读书</a></div>
+                                    <div class="top-nav-next-li"><a id="forum" href="javascript:;"
+                                                                    style="color:#b2b2b2;">社区</a></div>
+                                </div>
+                            </div>
+                            <div class="top-search-next">
+                                <form name="searchForm" id="searchForm" method="post"
+                                      action="#" onsubmit="return chkSearch(this)">
+                                    <div class="search-nav search-nav-next" style="margin-top:2px;">
+                                        <span class="top-search-course">课程</span>
+                                    </div>
+                                    <input type="text" name="keyword" class="top-nav-search-next" placeholder="请输入内容">
+                                    <input type="hidden" name="search_type" id="search_type" value="0">
+                                    <input type="image" src="images/search-n.png" onfocus="this.blur()"
+                                           class="top-nav-search-icon" style="margin-top:2px;">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--搜索结束-->
+                    <span class="nav_box_new">
+								<a href="#"><img src="images/nav_vip_a.png" width="22"
+                                                               height="22">VIP会员</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--下拉导航结束-->
+    <style type="text/css">
+        #body_content {
+            padding-bottom: 230px;
+        }
+    </style>
+    <div class="independent">
+        <!--头部开始-->
+        <div class="independent-banner">
+            <div class="independent-self">
+                <div class="independent-banner-top">
+                    <div class="independent-banner-top-left">
+                        <div class="independent-banner-top-left-image"><img src="images/both-image.png"
+                                                                            width="35" height="35" alt=""></div>
+                        <div class="independent-banner-top-left-bothwrite">全部课程</div>
+                    </div>
+                    <div class="independent-child">
+                        <div class="independent-banner-top-li"><a href="#">体系课程</a></div>
+                        <div class="independent-banner-top-li"><a href="#">实战课程</a></div>
+                    </div>
+                    <div class="independent-banner-top-ul">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--头部结束-->
+        <div class="independent-both">
+            <!--左侧开始-->
+            <div class="independent-bottom-left">
+                <div class="independent-bottom-left-li" style="padding-top:5px;">
+                    <div class="independent-bottom-left-li-write">后端开发</div>
+                    <div class="independent-bottom-left-li-writemore">
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/1.html">Java</a></div>
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/43.html">JavaWeb</a></div>
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/38.html">PHP</a></div>
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/4.html">C#</a></div>
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/3.html">C++</a></div>
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/44.html">JSP</a></div>
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/12.html">C语言</a></div>
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/39.html">ASP.NET</a></div>
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/41.html">VB</a></div>
+                    </div>
+                    <div class="independent-bottom-left-li-write">移动端开发</div>
+                    <div class="independent-bottom-left-li-writemore">
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/11.html">Android</a></div>
+                    </div>
+                    <div class="independent-bottom-left-li-write">数据库开发</div>
+                    <div class="independent-bottom-left-li-writemore">
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/10.html">Oracle</a></div>
+                    </div>
+                    <div class="independent-bottom-left-li-write">前端开发</div>
+                    <div class="independent-bottom-left-li-writemore">
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/9.html">JavaScript</a></div>
+                    </div>
+                    <div class="independent-bottom-left-li-write">其他</div>
+                    <div class="independent-bottom-left-li-writemore">
+                        <div class="independent-bottom-left-li-writemore-li"><a
+                                href="/Index/Course/selfCourse/id/47.html">其他</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--左侧结束-->
+            <!--右侧开始-->
+            <div class="independent-bottom-right">
+                <div class="independent-line"></div>
+                <div class="independent-Curriculum">
+                    <div class="independent-Curriculum-banner">
+                        <div class="independent-Curriculum-bannerleft">
+                            <div class="independent-Curriculum-bannerleft-left">
+                                <img src="images/Curriculum-icon.png" width="15" height="15" alt="">
+                            </div>
+                            <div class="independent-Curriculum-bannerleft-right">
+                                <a href="#" style="color:#339dd2;">体系课程</a>
+                            </div>
+                        </div>
+                        <div class="independent-Curriculum-bannerright">
+                            <a href="#">
+                                <div class="PracticeCourse-nav-txt">更多&gt;&gt;</div>
+                            </a></div>
+                    </div>
+
+                    <!--体系课程开始-->
+                    <div class="independent-Curriculum-content">
+                        <div class="independent-Curriculum-contentli" style="margin-left:30px; float:left;">
+                            <div class="independent-Curriculum-contentli-top">
+                                <a href="#">
+                                    <img src="images/5865ac73bdc70.png"
+                                         width="473" height="200" alt="">
+                                </a>
+                            </div>
+                            <div class="independent-Curriculum-contentli-bottom">
+                                <div class="independent-Curriculum-contentli-bottomtop"><a href="#">Java入门第一季</a>
+                                </div>
+                                <div class="independent-Curriculum-contentli-bottombottom">
+                                    <div class="independent-Curriculum-contentli-bottombottom-lithree">
+                                        <div class="book-left"><img src="images/book.png" width="25" height="25"
+                                                                    alt=""></div>
+                                        <div class="book-right">主讲：根号申</div>
+                                    </div>
+                                    <div class="independent-Curriculum-contentli-bottombottom-li">
+                                        <div class="book-left"><img src="images/clock-icon.png" width="25"
+                                                                    height="25" alt=""></div>
+                                        <div class="book-right">课时：10小时9分15秒</div>
+                                    </div>
+                                    <div class="independent-Curriculum-contentli-bottombottom-litwo">
+                                        <div class="independent-study-botton"><a href="#">开始学习</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="independent-Curriculum-contentli" style="margin-left:30px; float:left;">
+                            <div class="independent-Curriculum-contentli-top">
+                                <a href="#"> <img
+                                        src="images/586332b98a14e.png" width="473" height="200"
+                                        alt=""></a>
+                            </div>
+                            <div class="independent-Curriculum-contentli-bottom">
+                                <div class="independent-Curriculum-contentli-bottomtop"><a
+                                        href="#">Java入门第二季</a></div>
+                                <div class="independent-Curriculum-contentli-bottombottom">
+                                    <div class="independent-Curriculum-contentli-bottombottom-lithree">
+                                        <div class="book-left"><img src="images/book.png" width="25" height="25"
+                                                                    alt=""></div>
+                                        <div class="book-right">主讲：根号申</div>
+                                    </div>
+                                    <div class="independent-Curriculum-contentli-bottombottom-li">
+                                        <div class="book-left"><img src="images/clock-icon.png" width="25"
+                                                                    height="25" alt=""></div>
+                                        <div class="book-right">课时：12小时18分36秒</div>
+                                    </div>
+                                    <div class="independent-Curriculum-contentli-bottombottom-litwo">
+                                        <div class="independent-study-botton"><a href="#">开始学习</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--体系课程结束-->
+                <!--实战课程开始-->
+                <div class="independent-PracticeCourse-index">
+
+                    <div class="independent-PracticeCourse-banner">
+                        <div class="independent-PracticeCourse-bannerleft">
+                            <div class="independent-PracticeCourse-bannerleft-left"><img
+                                    src="images/Curriculum-icon.png" width="15" height="15" alt=""></div>
+                            <div class="independent-PracticeCourse-bannerleft-right"><a
+                                    href="/Index/Video/practiceCourse.html" style="color:#339dd2;">实战课程</a></div>
+                        </div>
+                        <div class="independent-PracticeCourse-bannerright">
+                            <a href="/Index/Video/practiceCourse.html">
+                                <div class="PracticeCourse-nav-txt">更多&gt;&gt;</div>
+                                <!-- <div class="PracticeCourse-nav-circle"></div>-->
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="independent-PracticeCourse-content">
+                        <div class="PracticeCourse-none" style="height:620px;">
+                            <!--实例开始-->
+                            <div class="independent-PracticeCourse-contentli">
+
+                                <div class="independent-PracticeCourse-contentli-content">
+                                    <div class="independent-PracticeCourse-contentli-flag">
+                                        <div class="independent-fragmentation-contentli-topsmallblue">易</div>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-top">
+                                        <a href="#" target="_blank"><img
+                                                src="images/5629c667e4e1c.JPG" width="306" height="192"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-bottom">
+                                        <div class="independent-PracticeCourse-contentli-bottom-top">
+                                            <a href="#" target="_blank">计算本金利息的和</a></div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom"
+                                             style="text-align:left;">
+                                            <div class="img-practice"><img src="images/bothcourse.png"
+                                                                           width="30" height="17" alt=""></div>
+                                            <div class="name-practice">C#
+                                                <h></h>
+                                                |
+                                                <h></h>
+                                                实例
+                                            </div>
+                                            <div class="type-practice">免费</div>
+                                        </div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom">
+                                            <div class="independent-PracticeCourse-contentli-bottom-time"><img
+                                                    src="images/clocktwo-icon.png" width="30" height="17"
+                                                    alt="">6分40秒
+                                            </div>
+                                            <div class="independent-PracticeCourse-contentli-bottom-number"> 227人学习
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--实例结束-->                                <!--实例开始-->
+                            <div class="independent-PracticeCourse-contentli">
+
+                                <div class="independent-PracticeCourse-contentli-content">
+                                    <div class="independent-PracticeCourse-contentli-flag">
+                                        <div class="independent-PracticeCourse-contentli-topsmall">难</div>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-top">
+                                        <a href="#" target="_blank"><img
+                                                src="images/5811596ecb458.jpg" width="306" height="192"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-bottom">
+                                        <div class="independent-PracticeCourse-contentli-bottom-top">
+                                            <a href="#" target="_blank">三天打鱼两天晒网</a></div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom"
+                                             style="text-align:left;">
+                                            <div class="img-practice"><img src="images/bothcourse.png"
+                                                                           width="30" height="17" alt=""></div>
+                                            <div class="name-practice">C++
+                                                <h></h>
+                                                |
+                                                <h></h>
+                                                实例
+                                            </div>
+                                            <div class="type-practice">免费</div>
+                                        </div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom">
+                                            <div class="independent-PracticeCourse-contentli-bottom-time"><img
+                                                    src="images/clocktwo-icon.png" width="30" height="17"
+                                                    alt="">29分26秒
+                                            </div>
+                                            <div class="independent-PracticeCourse-contentli-bottom-number"> 691人学习
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--实例结束-->                                <!--实例开始-->
+                            <div class="independent-PracticeCourse-contentli">
+
+                                <div class="independent-PracticeCourse-contentli-content">
+                                    <div class="independent-PracticeCourse-contentli-flag">
+                                        <div class="independent-PracticeCourse-contentli-topsmallgreen">适中</div>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-top">
+                                        <a href="#" target="_blank"><img
+                                                src="images/5873049a3a84c.png" width="306" height="192"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-bottom">
+                                        <div class="independent-PracticeCourse-contentli-bottom-top">
+                                            <a href="#" target="_blank">统计学生成绩</a></div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom"
+                                             style="text-align:left;">
+                                            <div class="img-practice"><img src="images/bothcourse.png"
+                                                                           width="30" height="17" alt=""></div>
+                                            <div class="name-practice">C++
+                                                <h></h>
+                                                |
+                                                <h></h>
+                                                实例
+                                            </div>
+                                            <div class="type-practice">免费</div>
+                                        </div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom">
+                                            <div class="independent-PracticeCourse-contentli-bottom-time"><img
+                                                    src="images/clocktwo-icon.png" width="30" height="17"
+                                                    alt="">9分51秒
+                                            </div>
+                                            <div class="independent-PracticeCourse-contentli-bottom-number"> 264人学习
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--实例结束-->
+
+                            <!--实例开始-->
+                            <div class="independent-PracticeCourse-contentli">
+
+                                <div class="independent-PracticeCourse-contentli-content">
+                                    <div class="independent-PracticeCourse-contentli-flag">
+                                        <div class="independent-fragmentation-contentli-topsmallblue">易</div>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-top">
+                                        <a href="#" target="_blank"><img
+                                                src="images/58115a5342fed.jpg" width="306" height="192"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-bottom">
+                                        <div class="independent-PracticeCourse-contentli-bottom-top">
+                                            <a href="#" target="_blank">画桃花游戏</a></div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom"
+                                             style="text-align:left;">
+                                            <div class="img-practice"><img src="images/bothcourse.png"
+                                                                           width="30" height="17" alt=""></div>
+                                            <div class="name-practice">C#
+                                                <h></h>
+                                                |
+                                                <h></h>
+                                                实例
+                                            </div>
+                                            <div class="type-practice">免费</div>
+                                        </div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom">
+                                            <div class="independent-PracticeCourse-contentli-bottom-time"><img
+                                                    src="images/clocktwo-icon.png" width="30" height="17"
+                                                    alt="">12分48秒
+                                            </div>
+                                            <div class="independent-PracticeCourse-contentli-bottom-number"> 375人学习
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--实例结束-->                                <!--实例开始-->
+                            <div class="independent-PracticeCourse-contentli">
+
+                                <div class="independent-PracticeCourse-contentli-content">
+                                    <div class="independent-PracticeCourse-contentli-flag">
+                                        <div class="independent-fragmentation-contentli-topsmallblue">易</div>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-top">
+                                        <a href="#" target="_blank"><img
+                                                src="images/58115b7e54107.jpg" width="306" height="192"
+                                                alt=""></a>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-bottom">
+                                        <div class="independent-PracticeCourse-contentli-bottom-top">
+                                            <a href="#" target="_blank">编写一个考试的小程序</a></div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom"
+                                             style="text-align:left;">
+                                            <div class="img-practice"><img src="images/bothcourse.png"
+                                                                           width="30" height="17" alt=""></div>
+                                            <div class="name-practice">Java
+                                                <h></h>
+                                                |
+                                                <h></h>
+                                                实例
+                                            </div>
+                                            <div class="type-practice">免费</div>
+                                        </div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom">
+                                            <div class="independent-PracticeCourse-contentli-bottom-time"><img
+                                                    src="images/clocktwo-icon.png" width="30" height="17"
+                                                    alt="">3分57秒
+                                            </div>
+                                            <div class="independent-PracticeCourse-contentli-bottom-number"> 1553人学习
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--实例结束-->
+                            <div class="independent-PracticeCourse-contentli">
+
+                                <div class="independent-PracticeCourse-contentli-content">
+                                    <div class="independent-PracticeCourse-contentli-flag">
+                                        <div class="independent-fragmentation-contentli-topsmallblue">易</div>
+                                    </div>
+                                    <div class="independent-PracticeCourse-contentli-top">
+                                        <a href="#" target="_blank"><img
+                                                src="images/583e7140c88ab.jpg" width="306" height="192"
+                                                alt=""></a>
+                                    </div>
+
+
+                                    <div class="independent-PracticeCourse-contentli-bottom">
+                                        <div class="item-change-txt">
+                                            <a href="#" target="_blank">第1讲 酒店管理系统-概述</a>
+                                            <div class="item-change-txt-content"><p>
+                                                本节课将带领用户实现一个酒店管理系统。系统涵盖多个功能模块，主要有开台点菜、智能化获取菜品、自动结账，菜系管理、日月年记账报表。涉及的知识点主要有Swing鼠标或键盘事...</p>
+                                            </div>
+                                        </div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom"
+                                             style="text-align:left;">
+                                            <div class="img-practice">
+                                                <img src="images/bothcourse.png" width="30" height="17" alt="">
+                                            </div>
+                                            <div class="name-practice">Java
+                                                <h></h>
+                                                |
+                                                <h></h>
+                                                项目
+                                            </div>
+                                            <div class="type-practice">免费</div>
+                                        </div>
+                                        <div class="independent-PracticeCourse-contentli-bottom-bottom">
+                                            <div class="independent-PracticeCourse-contentli-bottom-time"><img
+                                                    src="images/clocktwo-icon.png" width="30" height="17"
+                                                    alt="">1分32秒
+                                            </div>
+                                            <div class="independent-PracticeCourse-contentli-bottom-number"> 784人学习
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <!--实战课程结束-->
+
+            </div>
+            <!--右侧结束-->
+        </div>
+
+    </div>
+
+    <!--同步提示开始-->
+    <div id="point_all">
+        <div class="point_bg">
+            <div class="point_vci">
+                <div class="point_content">
+                    <div class="point_top">
+                        <div class="point_title">
+                            手机同步功能介绍
+                            <a href="javascript:"><span class="point_close" id="p_close"></span></a>
+                        </div>
+                        <img src="images/point_1.png">
+                    </div>
+                    <div class="point_bottom">
+                        <div class="point_nav">友情提示：以下图书配套资源能够实现手机同步功能</div>
+                        <ul>
+                            <li><a href="#"><img src="images/p_java.png" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="images/p_android.png" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="images/p_c.png" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="images/p_cl.png" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="images/p_php.png" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="images/p_jw.png" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="images/p_c2.png" alt=""></a>
+                            </li>
+                            <li><a href="#"><img src="images/p_jsp.png" alt=""></a>
+                            </li>
+
+                        </ul>
+                        <div class="point_know" id="iknow" style="display:none;"><a href="javascript:">我知道了</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--同步提示结束-->
+    <div id="tbox">
+        <div class="phone_other">
+            <a href="javascript:" id="phone_time" class="mobilePic"></a> <a
+                href="http://wpa.b.qq.com/cgi/wpa.php?ln=1&amp;key=XzkzODA3NzAwNl80NDYzMDVfNDAwNjc1MTA2Nl8yXw"
+                id="pinglun" target="_blank"></a>
+            <a href="/Index/ServiceCenter/feedback.html" target="_blank" id="xiangguan"></a>
+            <a id="gotop" href="javascript:;" style="display: none;"></a>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function () {
+            if ($("#mess_block").length > 0) {
+                $("#tbox").css("margin-bottom", $("#mess_block").height() + "px");
+            }
+            $("#p_close").click(function () {
+                if ($("#iknow").is(":visible")) {
+                    location.href = $("#iknow").find("a").attr("href");
+                }
+                $("#point_all").hide();
+            });
+            $('.mobilePic').click(function () {
+                $(this).attr("id", "phone_time");
+                $.get("/Index/Ajax/getMobileSaveUrl.html", function (data) {
+                    if (data == -1) {
+                        layer.msg("请您先登录！", {time: 1000}, function () {
+                            window.location.href = "/Index/User/login/flag/back.html";
+                        });
+                    } else if (data == -2) {
+                        layer.msg("您的账号已在其他地点登录！", {time: 1000}, function () {
+                            window.location.href = "/Index/User/login/flag/back.html";
+                        });
+                    } else {
+                        ;
+                        if (data.status) {
+                            location.href = "/Index/Index/SyncGuide.html";
+                            /*$("#point_all").show();
+                            if(data.msg != ''){
+                               $("#iknow").find("a").attr("href",data.msg);
+                               $("#iknow").show();
+                            }*/
+                        } else {
+                            location.href = data.msg;
+                        }
+                    }
+                })
+            });
+        });
+    </script>
+    <style type="text/css">dl {
+        margin-right: 45px;
+    }</style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#friend").click(function () {
+                $("#code").show();
+            });
+            $("#h_close").click(function () {
+                $("#code").hide();
+            });
+            $('#close_star').click(function () {
+                $('#star_certificate').hide();
+            });
+        });
+    </script>
+
+
+    <div class="bottom-page-last-a">
+    </div>
+    <!--改开始-->
+    <div class="bottom-page">
+        <div class="bottom-page-in">
+            <!--学习群二维码开始-->
+            <div class="code_news">
+                <img src="images/code_news.jpg" width="114" height="116" alt="">
+                <span>明日微信公众号</span>
+            </div>
+            <!--学习群二维码结束-->
+            <!--第一部分开始-->
+            <div class="bottom-content">
+                <div class="bottom-service">
+                    <div class="bottom-service-img">
+                        <img src="images/phoneIcon.png" width="28" height="28" alt="">
+                    </div>
+                    <div class="bottom-service-txt">客服热线(每日9:00-17:00)</div>
+                </div>
+                <div class="bottom-service-phone">400 675 1066</div>
+                <div class="bottom-service-icon" style=" height:40px; padding-left:10px; margin-top:5px;">
+                    <div class="bottom-service-icon-li" style="border-radius:50%;">
+                        <a href="http://weibo.com/5897586383/profile?topnav=1&amp;wvr=6" target="_blank">
+                            <img src="images/b-wbIcon.png" width="41" height="48" alt="">
+                        </a>
+                    </div>
+                    <div class="weixin" onmouseover="this.className = 'weixin on';"
+                         onmouseout="this.className = 'weixin';">
+                        <a href="javascript:;" style="cursor:default;">
+                            <img src="images/wxIcon.png" width="41" height="48" alt="">
+                        </a>
+                        <div class="weixin_nr">
+                            <img src="images/wx-bottom.png" width="120" height="129" alt=""
+                                 style="margin-top:10px;">
+                        </div>
+                    </div>
+                    <div class="bottom-service-icon-li bottom_email" style="margin-right:13px;">
+                        <img src="images/newIcon.png" width="41" height="48" alt="">
+                        <div class="bottom_email_text">mingrisoft@mingrisoft.com</div>
+                    </div>
+                    <div class="mail_bottom" onmouseover="this.className = 'mail_bottom on';"
+                         onmouseout="this.className = 'mail_bottom';" style="display:none;">
+                        <a href="javascript:;" style="cursor:default;">
+                            <img src="images/phone-sicon.png" width="41" height="48" alt="">
+                        </a>
+                        <div class="mail_bottom_nr">
+                            <img src="images/wx-bottom.png" width="120" height="129" alt=""
+                                 style="margin-top:10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--第一部分结束-->
+            <!--第二部分开始-->
+            <div id="footer_d">
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="/selfcourse.html">课程学习</a></dd>
+                    <dd><a href="/bbs.html">技术问答</a></dd>
+                    <dd><a href="/Index/ServiceCenter/credits.html">学分获得</a></dd>
+                    <!--<dd><a href="#">社区讨论</a></dd>
+                    <dd><a href="#">资源下载</a></dd>-->
+                </dl>
+                <dl>
+                    <dt>帮助中心</dt>
+                    <!--<dd><a href="#">技术问答</a></dd>
+                    <dd><a href="#">交费方式</a></dd>-->
+                    <dd><a href="/Index/ServiceCenter/vip.html">VIP权益</a></dd>
+                    <dd><a href="/Index/ServiceCenter/course_need.html">课程需求</a></dd>
+                    <dd>
+                        <a href="/myVip/flag/free.html">免费VIP</a></dd>
+                </dl>
+                <dl>
+                    <dt>交流合作</dt>
+                    <dd><a href="/Index/ServiceCenter/aboutus.html">关于我们</a></dd>
+                    <dd><a href="/Index/ServiceCenter/recruitment.html">人才招聘</a></dd>
+                    <!--<dd><a href="/Index/ServiceCenter/contactus.html">联系我们</a></dd>-->
+                    <dd><a href="/Index/ServiceCenter/feedback.html">意见反馈</a></dd>
+                </dl>
+                <!--<dd><a href="#">友情链接</a></dd>-->
+
+                <dl>
+                    <dt>其他</dt>
+                    <!--<dd><a href="#">人工服务</a></dd>
+                    <dd><a href="#">课程需求</a></dd>-->
+                    <dd><a href="/Index/ServiceCenter/copyright.html">版权声明</a></dd>
+                    <dd><a href="/Index/ServiceCenter/term.html">服务条款</a></dd>
+                    <dd><a href="http://test.mingrisoft.com/download.php">下载APP</a></dd>
+                </dl>
+            </div>
+            <!--第二部分结束-->
+        </div>
+        <div class="bottom-page-last">
+            吉林省明日科技有限公司
+            <h></h>
+            Copyright ©2007-2017, mingrisoft.com, All Rights Reserved
+            <h></h>
+            吉ICP备10002740号
+            <h></h>
+            吉公网安备22010202000132
+        </div>
+    </div>
+    <!--改结束-->
+</div>
+
+<div id="cli_dialog_div"></div>
+</body>
+</html>

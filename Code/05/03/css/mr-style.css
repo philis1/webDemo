@@ -1,0 +1,87 @@
+@charset "utf-8";
+/*css document*/
+*{                                /*清除页面中默认的内外间距*/
+    padding: 0;
+    margin: 0; 
+}
+.cont{                            /*设置页面的整体样式*/
+    margin: 20px auto;            /*设置页面的整体外边距*/
+    width: 620px;                 /*设置页面的整体大小*/
+    height: 600px;
+    background: rgb(237,237,242); /*设置背景颜色*/
+    border: 1px solid #f00;       /*设置边框*/
+}
+.top{                             /*设置顶部样式*/
+    height: 80px;                 /*设置高度*/
+    color: #fff;                  /*设置文字颜色*/
+    background: rgb(55,177,124);  /*设置背景颜色*/
+}
+.top>div,.chat>div>p,.chat>div>div{ /*左右部分以及聊天内容的公共样式*/
+    float: left;                  /*设置浮动方式左浮动*/
+}            
+.top>:first-child {               /*设置顶部头像的样式*/
+    margin: 10px;                 /*设置头像的外间距*/
+}
+.top>:last-child{                 /*设置头像右边文字样式*/
+    padding: 10px 5px;            /*设置页面的整体样式*/
+}
+.top>:last-child>:first-child{    /*设置头像右边第二行文字的样式*/
+    font-size: 24px;              /*设置字体*/
+}
+.content{                         /*设置第二部分文字部分的样式*/
+    background: rgb(213,213,213); /*设置背景颜色*/
+    padding-top: 10px;            /*设置向上的内边距*/
+	height: 450px;                /*设置高度*/
+    width: 620px;                 /*设置宽度*/
+    background: rgb(255,255,255); /*设置背景颜色*/
+}
+.chat>p{                          /*设置时间样式*/
+    padding-top: 20px;            /*设置时间距离上方的间距*/
+    color: #999999;               /*设置文字颜色*/
+    text-align: center;           /*设置对齐方式*/
+} 
+.chat>div{
+	margin-top: 30px;
+}
+.chat .say{
+	margin: -10px 10px 10px;
+	height: 70px;
+	border: 1px solid #dbdbdb;
+}
+.say p,.say select{
+	margin:10px 15px 5px
+}
+.chat>:last-child p{
+	height: 40px;
+	line-height: 40px;
+	margin: 10px;
+	padding: 0 10px;
+	border: 1px solid #dbdbdb;        /*设置边框*/
+}
+.chat>div{
+	clear: both;
+	height: 50px;
+}
+.write{                           /*设置文字输入部分的样式*/
+    background: #efefef;          /*设置背景颜色*/
+    margin-top: 100px;            /*设置向上的外边距*/
+    height: 175px;                /*设置大小*/
+    width: 620px;           
+}            
+.write p{                         /*设置发送不分的样式*/
+    float: right;                 /*设置浮动*/
+    margin-right: 20px;           /*设置向右的外间距*/
+}            
+.write p [type="button"]{         /*设置发送按钮的样式*/
+    padding: 6px 15px;            /*设置按钮的内间距*/
+    background:rgb(41,176,121) ;  /*设置背景颜色*/
+    font-size: 18px;              /*设置字号*/
+    color: #fff;                  /*设置文字颜色*/
+}            
+textarea{                         /*设置文本域的样式*/
+    background: #efefef;          /*设置背景颜色*/
+	font-size: 18px;              /*设置字体*/
+	padding-top: 10px;            /*设置文字距离上方的间距*/
+    border: none;                 /*清除边框*/
+}            
+

@@ -1,0 +1,71 @@
+@charset "utf-8";
+/*css document*/
+table{                                               /*设置表格的整体样式*/
+    width: 1000px;                                   /*设置表格的宽度*/
+}
+td{                                                  /*设置表格列的样式*/
+    border-bottom: 1px solid #666;                   /*设置下边框*/
+}
+
+thead>:first-child td h2{                            /*设置“我的订单”的样式*/
+    padding: 0px 20px 10px;                          /*设置内间距*/
+    width: 100px;                                     /*设置宽度*/
+    border-bottom: 3px solid rgb(255,127,0);         /*设置下边框*/
+}
+[type="text"]{                                       /*设置单行文本框的样式*/
+    width: 250px;                                    /*设置大小*/
+    height: 30px;
+}
+[type="button"]{                                     /*设置搜索按钮的样式*/
+    height: 35px;                                    /*设置大小*/
+    width: 80px;
+    border: none;                                    /*清除边框*/
+    background: rgb(230,235,242);                    /*设置背景颜色*/
+}
+thead>:last-child{                                   /*设置表格第一部分的最后一行的样式*/
+    color: #999;                                     /*设置文字颜色*/
+}
+thead>:last-child>:first-child{                      /*设置第三行“状态”的样式*/
+    color: #000;                                     /*设置文字颜色*/
+    font-weight: bold;                               /*设置字体粗细*/
+}
+thead>:last-child>:first-child+td span{              /*设置“全部”的样式*/
+    color: #fff;                                     /*设置文字颜色*/
+    width: 40px;                                     /*设置宽度*/
+    text-align: center;                              /*设置对齐方式*/
+    padding:3px 5px;                                 /*设置内间距*/
+    background: rgb(91,199,157);                     /*设置背景颜色*/
+}
+tbody tr{                                            /*设置表格主体部分的样式*/
+    height: 120px;                                   /*设置高度*/
+    text-align: center;                              /*设置文字的对齐方式*/
+    color: #999;                                     /*设置文字颜色*/
+}
+tbody>:first-child{                                  /*设置表格主体第一行的样式*/
+    height: 40px;                                    /*设置行高*/
+    font-size: 13px;                                 /*设置字号*/
+}
+span{                                                /*设置表格内容中文字样式*/
+    display: block;                                  /*设置文字在页面中的显示方式*/
+    margin-top: 5px;                                 /*设置向上的外间距*/
+}
+td>div{                                              /*设置表格中第二列的样式*/
+    float: left;                                     /*设置浮动*/
+    text-align: left;                                /*设置文字的对齐方式*/
+}
+.margin{                                             /*设置图书名称的样式*/
+    margin: 30px 0 0 30px;                           /*改变外间距*/
+}
+.margin+div{                                         /*设置“联系客服”的样式*/
+    margin-top: 60px;                                /*设置向上的外间距*/
+    color: rgb(240,91,72);                           /*设置文字颜色*/
+    border-bottom: 1px solid rgb(240,91,72);         /*设置下边框*/
+    font-size: 12px;                                 /*设置字号*/
+}
+img{                                                 /*设置图片样式*/
+    width: 60px;                                     /*设置图片大小*/
+}
+select{                                              /*设置下拉菜单的样式*/
+    color: #999;                                     /*设置文字颜色*/
+    padding: 3px 5px;                                /*设置内间距*/
+}

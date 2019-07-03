@@ -1,0 +1,69 @@
+@charset "utf-8";
+/*css document*/
+*{                          /*清除页面中默认的内外边距*/
+    padding: 0;
+    margin: 0;
+}
+.cont {                     /*设置页面总体样式*/
+    margin: 20px auto;      /*设置总体外边距*/
+    width: 975px;           /*设置页面整体的宽度*/
+    height: 360px;          /*设置页面整体高度*/
+    border: 1px solid #f00; /*设置页面的边框*/
+}
+h3{                         /*设置页面中标题的样式 */
+    padding: 10px 20px;     /*设置标题的内边距*/
+    color: rgb(57,85,153);  /*设置标题文字的文字颜色*/
+    background: rgb(231,241,251);/*设置标题的背景颜色*/
+}
+.content{                   /*设置文本输入部分的整体样式*/
+    margin-top: 40px;       /*设置向上的外边距*/
+}
+.content>div{               /*设置两个文本输入部分的样式*/
+    margin-top: 20px;       /*设置向上的外边距*/
+}
+.content>div>p{             /*设置提示文字的样式*/
+    margin-left: 20px;      /*设置向左的外边距*/
+    width: 80px;            /*设置宽度*/
+    line-height: 30px;      /*设置行高*/
+    float: left;            /*设置浮动方式*/
+    letter-spacing: 10px;   /*设置文字间的水平间距*/
+}
+.content>div>input[type="text"]{/*设置单行文本框的样式*/
+    width: 670px;           /*设置单行文本框的宽度*/
+    height: 30px;           /*设置单行文本框的高度*/
+}
+.content>:last-child>p{     /*设置文本域提示文字的样式*/
+    margin-top: 10px;       /*设置向上的外边距*/
+}
+.content>:last-child>div>div{/*设置版权声明部分的样式*/
+    height: 100px;          /*设置宽度*/
+    width: 815px;           /*设置高度*/
+    color: #999;            /*设置文字颜色*/
+    margin: -2px 102px;     /*设置外边距*/
+    border: 1px solid #AEBDCC;/*设置边框*/
+}
+.content span{              /*设置提示文字的边距*/
+    font-size: 12px;        /*设置字体大小*/
+    color: #f00;            /*设置文字颜色*/
+    display: none;          /*将文字设置为隐藏*/
+}
+.content>:last-child>:last-child>:last-child{
+    margin:10px 100px;      /*设置文本域部分的提示文字的样式*/
+}
+.typein{                    /*设置文本域部分的样式*/
+    position: relative;     /*清除页面中默认的内外边距*/
+}
+textarea{                   /*设置文本域的样式*/
+    position: absolute;     /*设置定位方式*/
+    width: 815px;           /*设置宽度*/
+    height: 100px;          /*设置高度*/
+    display: none;          /*设置文本域隐藏*/
+}
+.cont>:last-child{          /*设置按钮部分的整体样式*/
+    margin: 20px 100px;     /*设置外边距*/
+}
+input[type="button"]{       /*设置按钮的样式*/
+    background: rgb(211,230,245);/*添加背景颜色*/
+    width: 100px;           /*设置宽度*/
+    height: 35px;           /*设置高度*/
+}

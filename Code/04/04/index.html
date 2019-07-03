@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>定制你的视频播放器</title>
+    <link href="mr-style.css" rel="stylesheet" type="text/css">
+    <script src="mr.js"></script>
+</head>
+<body onload="init()" >
+<div>
+    <video id="video1"  src="test.mp4" class="mr-vedio" width="650" height="450"> </video>
+</div>
+<div>
+    <button onclick="play()">播放视频</button>			<!--应用.play()方法-->
+    <button onclick="pause()">暂停视频</button>		<!--应用.pause()方法-->
+    <button onclick="load()">重载视频</button>			<!--应用.load()方法-->
+</div>
+</body>
+</html>

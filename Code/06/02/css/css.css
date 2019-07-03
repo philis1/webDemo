@@ -1,0 +1,24 @@
+@charset "utf-8";
+/*css document*/
+*{                                   /*清除页面默认的内间距*/
+    padding: 0;
+}
+ul{                                  /*设置无序列表的样式*/
+    margin: 0px auto;               /*设置上下外间距*/
+    width: 970px;                    /*设置导航的整体宽度*/
+    background: #777;                /*设置背景颜色*/
+    height: 60px;                    /*设置高度*/
+}
+ul li{                               /*设置列表项的样式*/
+    text-align: center;              /*设置文字对齐方式*/
+    list-style: none;                /*清除无序列表的默认样式*/
+    float: left;                     /*设置浮动*/
+    font-size: 24px;                 /*设置字号*/
+    line-height: 60px;               /*设置行高*/
+    width: 130px;                    /*设置宽度*/
+    color: #fff;                     /*设置文字颜色*/
+}                                
+ul li:hover{                         /*鼠标放置在列表项上时的样式*/
+    color: #0f0;                     /*设置文字颜色为红色*/
+    background: #fff;                /*设置背景颜色为白色*/
+}

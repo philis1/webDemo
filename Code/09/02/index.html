@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>限时大抢购</title>
+    <link href="css/css.css" type="text/css" rel="stylesheet">
+    <script>
+        var maxtime = 240 //表示倒计时的秒数，一个小时，按秒计算，自己调整!
+        function CountDown() {
+            if (maxtime >= 0) {
+                minutes = Math.floor(maxtime / 60);
+                seconds = Math.floor(maxtime % 60);
+                msg = "距离结束还有&nbsp;&nbsp;" + minutes + "分&nbsp;&nbsp;" + seconds + "秒";
+                document.all["timer"].innerHTML = msg;
+                if (maxtime == 5 * 60) alert('注意，还有5分钟!');
+                --maxtime;
+            }
+            else {
+                clearInterval(timer);
+                alert("时间到，结束!");
+            }
+        }
+        timer = setInterval("CountDown()", 1000);
+
+
+        function handle(oEvent){
+            if(window.event) oEvent = window.event;     //处理兼容性，获得事件对象
+            var oTarget;
+            if(oEvent.srcElement)               		//处理兼容性，获取事件目标
+                oTarget = oEvent.srcElement;
+            else
+                oTarget = oEvent.target;
+            alert(oTarget.tagName);               		 //弹出目标的标记名称
+        }
+        window.onload = function(){
+            var oImg = document.getElementsByTagName("img")[0];
+            oImg.onclick = handle;
+        }
+    </script>
+</head>
+<body>
+<div class="cont">
+    <div class="top">
+        <span id="timer"></span>
+    </div>
+    <div class="bottom">
+        <div class="pic"><img src="img/book.png" height="175px"> </div>
+        <div class="txt">
+            <p>零基础学Java</p>
+            <p><span>通俗易懂</span><span>流行有趣</span></p>
+            <p class="price"><span>￥49.8</span><span>原价：￥69.8</span></p>
+            <p><input type="button" value="已抢4/50件"><input type="button" value="立即抢购"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

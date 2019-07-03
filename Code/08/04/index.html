@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>意见反馈</title>
+    <link href="css/css.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="js/js.js"></script>
+</head>
+<body>
+<div class="cont">
+    <h3>您好，我是明日科技的产品经理，欢迎您给我们提出产品的使用感受和建议</h3>
+    <div class="content">
+        <div>
+            <p>标题：</p>
+            <input type="text" placeholder="请输入4~30个字符" id="input">
+            <span id="title">请输入4~30个字符</span>
+        </div>
+        <div>
+            <p>内容：</p>
+            <div>
+                <img src="img/edit.png" alt="">
+                <div class="typein">
+                    <textarea id="type"></textarea>
+                    <div onclick="typeIn()">感谢您给我们提出建议<br/>抱歉我们不能逐一回复您的意见<br>您的感受和建议一旦再次发表，
+					即表示您同意我们可无偿参考您的感受和建议来优化我们的产品和服务。若您有商业合作意向，请联系公司相关业务部门</div>
+                </div>
+                <span id="letternum">请输入10~10000个字符</span>
+            </div>
+        </div>
+    </div>
+    <div>
+        <input type="button" value="发表" onclick="checkTitle()">
+        <input type="button" value="保存">
+    </div>
+</div>
+</body>
+</html>

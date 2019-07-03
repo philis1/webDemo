@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户反馈</title>
+    <link href="css/mr-style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="cont">
+    <img src="logo.png">
+    <div class="say">
+        <p>反馈须知：本页仅受理在使用明日科技电子资源的过程中,遇到涉嫌违法违规行为的用户举报。</p>
+    </div>
+    <form>
+        <div class="question">
+            <div>
+                <p>
+                    <span>*</span>
+                    <span>问题描述</span>
+                    <span>(亲爱的用户，请您详细描述反馈的问题及理由，以保证管理员及时准确处理您的反馈。500字以内)</span>
+                </p>
+                <textarea cols="90" rows="8"></textarea>
+            </div>
+            <div>
+                <p>
+                    <span>相关图片</span>
+                    <span>(如需上传多张图片，请点击增加)</span>
+                </p>
+                <!--添加图片按钮-->
+                <img src="img/add.png" alt="" width="150px">
+            </div>
+            <div>
+                <p>
+                    <span>文件</span>
+                    <span>（只支持<span>.txt、.doc、.docx</span>格式）</span>
+                </p>
+                <div class="btn">
+                    <input type="button" value="选择文件"><!--添加按钮-->
+                    <input type="file" ><!--添加文件域，单击可以选择文件-->
+                </div>
+            </div>
+        </div>
+        <input type="image" name="submit" src="img/btn.jpg"><!--    添加图像域-->
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,54 @@
+@charset "utf-8";
+/*css document*/
+*{                                      /*清除页面中默认的内外间22距*/
+    padding: 0;
+    margin: 0;
+}
+.cont{                                  /*设置页面的整体样式*/
+    margin: 20px auto;                  /*设置外间距*/
+    width: 1200px;                      /*设置整体宽度*/
+}
+h1{                                     /*设置标题的样式*/
+    padding: 2px 0 15px;                /*设置内间距*/
+    width: 135px;                       /*设置宽度*/
+    border-bottom: 3px solid rgb(255,189,146);  /*设置下边框*/
+}
+hr{                                     /*设置水平线*/
+    width:860px;                        /*设置宽度*/
+}
+.cont div{                              /*设置主体部分的整体样式*/
+    margin-top: 20px;                   /*设置向上的外间距*/
+}
+ul,ol{                                  /*设置有序列表和无序列表的公共样式*/
+    float: left;                        /*设置浮动*/
+}
+ol{                                     /*设置有序列表的样式*/
+    width: 500px;                       /*设置宽度*/
+    list-style-position: inside;        /*设置列表项标志（序号）的位置*/
+}
+ol li{                                  /*设置有序列表列表项的样式*/
+    color:rgb(78,150,204);              /*改变文字颜色*/
+}
+ul{                                     /*设置无序列表的样式*/
+    text-align: center;                 /*设置文字对齐方式*/
+    width: 120px;                       /*设置宽度*/
+    list-style: none;                   /*清楚列表项样式*/
+}
+li,h3{                                  /*设置所有列表项以及标题的三级标题样式*/
+	padding-left: 20px;					/*设置向左的内间距*/
+    border: 1px solid #acacac;          /*设置边框*/
+    border-top: none;                   /*清除上边框*/
+    border-right: none;                 /*清除右边框*/
+    height: 35px;                       /*设置高度*/
+    line-height: 35px;                  /*设置行高*/
+}
+ul :first-child,ol :first-child{        /*设置表格中第一行的样式*/
+    border-top: 1px solid #acacac;      /*设置上边框*/
+}
+.cont div>:last-child li{               /*设置最后一个无序列表的列表项的样式*/
+    border-right: 1px solid #acacac;    /*设置右边框*/
+    color: rgb(255,148,78);             /*设置文字颜色*/
+}
+.cont div>:last-child h3{               /*设置最后一列的标题的样式*/
+    border-right: 1px solid #acacac;    /*设置右边框*/          
+}

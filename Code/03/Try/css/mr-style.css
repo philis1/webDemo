@@ -1,0 +1,116 @@
+@charset "utf-8";
+* {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.mr-content {
+	margin: 0 auto;
+	width: 1150px;
+	height: 750px;
+}
+.mr-daohang {
+	height: 40px;
+	background: #FB1C37;
+}
+ul {
+	width: 1150px;
+	position: relative;
+	margin-left: 78px;
+	text-align: center;
+}
+ul li {
+	width: 280px;
+	height: 40px;
+	list-style: none;
+	float: left;
+	margin-left: 50px;
+	font: 24px 楷体;
+	font-weight: 800;
+	color: #FFF;
+	line-height: 42px;
+}
+dl {
+	width: 380px;
+	height: 354px;
+	float: left;
+	border: 1px solid #999;
+	text-align: center;
+}
+dt {
+	position: relative;
+}
+dt:hover .mr-shad {
+	display: block;
+}
+dt .mr-shad {
+	height: 232px;
+	width: 281px;
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 50px;
+	background: rgba(0,0,0,0.5);
+	font-size: 18px;
+}
+.mr-guanzhu, .mr-goumai {
+	float: left;
+	margin-left: 70px;
+	margin-top: 150px;
+}
+.mr-shad a {
+	color: #FFF;
+}
+.mr-txt {
+	margin-top: 15px;
+	font-size: 14px;
+	color: #999;
+}
+.mr-content a {
+	text-decoration: none;
+	color: #999;
+}
+.mr-price {
+	margin-top: 20px;
+	color: #cc0000;
+	font-size: 24px;
+	font-weight: bold;
+}
+.mr-price span {
+	font-size: 16px;
+}
+.mr-pic1 {
+	width: 1150px;
+ 	height:560px;
+	position: absolute;
+	top: 40px;
+	left: -77px;
+}
+.mr-pic2, .mr-pic3, .mr-pic4, .mr-pic5 {
+	width: 1150px;
+ 	height:560px;
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: -77px;
+}
+.mr-shad a:hover {			/*通过伪类选择器设置文字颜色*/
+	color: #cc0000;			/*鼠标滑过时改变字体颜色*/
+}
+.mr-content a:hover {			/*通过伪类选择器设置文字颜色*/
+	color: #D01;
+}
+
+li:hover {					/*通过伪类选择器设置各列表项的样式*/
+	background: #D01;			/*鼠标滑过时改变背景颜色*/
+	display: block;			/*鼠标滑过时显示*/
+}
+.mr-hov1:hover .mr-pic1 {		/*通过伪类选择器设置划过导航时的样式*/
+	display: block;			/*鼠标滑过时显示*/
+}
+.mr-hov2:hover .mr-pic2 {		/*通过伪类选择器设置划过导航时的样式*/
+	display: block;			/*鼠标滑过时显示*/
+}
+.mr-hov3:hover .mr-pic3 {		/*通过伪类选择器设置划过导航时的样式*/
+	display: block;			/*鼠标滑过时显示*/
+}

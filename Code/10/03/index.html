@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" media="screen">
+    <title>移动端在线客服</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body style="">
+<div class="speak_window">
+    <div class="speak_box">
+        <div class="answer">
+            <div class="heard_img left"><img src="images/dglvyou.jpg"></div>
+            <div class="answer_text">
+                <p>Hi，欢迎来到明日图书，有什么可以帮助您的吗？</p>
+                <i></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="saying">
+    <img src="images/saying.gif">
+</div>
+<div class="wenwen-footer">
+    <div class="wenwen_btn left" onclick="to_write()"><img src="images/jp_btn.png"></div>
+    <div class="wenwen_text left">
+        <div class="write_box">
+            <input type="text" class="left" onkeyup="keyup()" placeholder="请输入关键字">
+        </div>
+        <div class="circle-button" id="wenwen">
+            按住 说话
+        </div>
+    </div>
+    <div class="wenwen_help right">
+        <a href="#">
+            <img src="images/help_btn.png">
+        </a>
+        <button onclick="up_say()" class="right">发送</button>
+    </div>
+    <div style="opacity:0;" class="clear"></div>
+</div>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+<script>
+     functiog test(){
+         alert("hello world!");
+     }
+</script>
+</body>
+</html>

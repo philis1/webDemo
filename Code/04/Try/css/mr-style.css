@@ -1,0 +1,21 @@
+@charset "utf-8";
+.mr-content{
+	width:500px;
+	height:800px;
+	margin:0 auto;
+	background:url(../images/bg.png) no-repeat;
+	border:2px solid #FF8080;	
+	}
+.mr-content h1{
+	padding-left:150px;
+	}
+.mr-content marquee{
+        text-align: center;
+	padding-bottom:20px;
+	font-size:16px;
+	font-weight:bold;
+	}
+.mr-content .mr-audio{
+	padding-left:100px;
+	padding-top:50px;
+	}

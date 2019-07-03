@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS3响应式菜单</title>
+    <style>
+        body {
+            font: 90%/160% Arial, Helvetica, sans-serif;
+            color: #666;
+            width: 900px;
+            max-width: 96%;
+            margin: 0 auto;
+        }
+        p {
+            margin: 0 0 20px;
+        }
+        a {
+            color: #69C;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #F60;
+        }
+        h1, h2, h3 {
+            color: #000;
+            line-height: 120%;
+            margin: 30px 0 10px;
+        }
+        h1 {
+            font-size: 1.7em;
+            color: #000;
+        }
+        h2 {
+            font-size: 1.4em;
+            padding-top: 20px;
+        }
+        h3 {
+            font-size: 1.1em;
+        }
+
+        /* nav */
+        .nav {
+            margin: 20px 0;
+        }
+        .nav ul {
+            margin: 0;
+            padding: 0;
+        }
+        .nav li {
+            margin: 0 5px 10px 0;
+            padding: 0;
+            list-style: none;
+            display: inline-block;
+            *display:inline; /* ie7 */
+        }
+        .nav a {
+            padding: 3px 12px;
+            text-decoration: none;
+            color: #999;
+            line-height: 100%;
+        }
+        .nav a:hover {
+            color: #000;
+        }
+        .nav .current a {
+            background: #999;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        /* right nav */
+        .nav.right ul {
+            text-align: right;
+        }
+
+        /* center nav */
+        .nav.center ul {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 600px) {
+            .nav {
+                position: relative;
+                min-height: 40px;
+            }
+            .nav ul {
+                width: 180px;
+                padding: 5px 0;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: solid 1px #aaa;
+
+                border-radius: 5px;
+                box-shadow: 0 1px 2px rgba(0,0,0,.3);
+            }
+            .nav li {
+                display: none; /* hide all <li> items */
+                margin: 0;
+            }
+            .nav .current {
+                display: block; /* show only current <li> item */
+            }
+            .nav a {
+                display: block;
+                padding: 5px 5px 5px 32px;
+                text-align: left;
+            }
+            .nav .current a {
+                background: none;
+                color: #666;
+            }
+            /* on nav hover */
+            .nav ul:hover {
+                background-image: none;
+                background-color: #fff;
+            }
+            .nav ul:hover li {
+                display: block;
+                margin: 0 0 5px;
+            }
+
+            /* right nav */
+            .nav.right ul {
+                left: auto;
+                right: 0;
+            }
+            /* center nav */
+            .nav.center ul {
+                left: 50%;
+                margin-left: -90px;
+            }
+
+        }
+    </style>
+</head>
+
+<!--引入背景图片-->
+<body style="background-image: url(bg.jpg)">
+<h2>明日科技在线学院</h2>
+<!--导航菜单区域-->
+<nav class="nav">
+    <ul>
+        <li class="current"><a href="#">课程</a></li>
+        <li><a href="#">读书</a></li>
+        <li><a href="#">社区</a></li>
+        <li><a href="#">服务中心</a></li>
+    </ul>
+</nav>
+<p>明日学院，是吉林省明日科技有限公司倾力打造的在线实用技能学习平台，
+    该平台于2016年正式上线，主要为学习者提供海量、优质的课程，课程结构严谨，
+    用户可以根据自身的学习程度，自主安排学习进度。
+    我们的宗旨是，为编程学习者提供一站式服务，培养用户的编程思维。
+</p>
+</body>
+</html>

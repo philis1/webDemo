@@ -1,0 +1,44 @@
+﻿@charset "utf-8";
+.mr-shop{
+	width:50%;
+	height:326px;
+	margin:0 auto;
+/*	border-collapse:collapse;*/
+	}
+.mr-shop tr th{
+	width:238px;
+	height:36px;
+	background:#DD2727;
+	/*border-right:12px solid #fff;*/
+	}
+.mr-shop tr td{
+	text-align:center;
+	/*border-right:12px solid #fff;*/
+	}
+
+.mr-th1 th{
+	text-align:center;
+	font-size:18px;
+	font-weight:700;
+	font-family:"黑体";
+	color:#fff;
+	}
+
+
+.mr-th3{
+	height:10px;
+	}
+.mr-th3 td{
+	font-size:14px;
+	color:#9688A5;
+	padding-top:5px;	
+	}
+.mr-box{
+	width: 1221px;
+    height: 450px;
+    border: 1px solid red;
+    margin: 0 auto;
+	}
+tfoot img{
+	width:100%;
+	}

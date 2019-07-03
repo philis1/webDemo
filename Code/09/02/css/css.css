@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*css document*/
+*{                                 /*清除元素默认的内外间距*/
+    padding: 0;
+    margin: 0;
+}
+.cont{                             /*设置页面的整体样式*/
+    width: 445px;                   /*设置页面的整体大小*/
+    height: 260px;
+    margin: 0 auto;
+    border: 1px solid #f00;        /*设置添加边框*/
+}
+.top span,.top ul{                /*设置顶部的大小*/
+    height: 50px;                  /*设置高度*/
+    float: left;                   /*设置左浮动*/
+    margin-top: 10px;                 /*设置上边距*/
+}
+.top span{
+    margin:10px 15px 0 150px;
+}
+
+.top ul li{                          /*设置列表项的样式*/
+    text-align: center;              /*设置文字的对齐方式*/
+    list-style: none;                /*清除列表项的默认样式*/
+    width: 25px;                      /*设置宽度*/
+    float: left;                      /*设置浮动*/
+}
+.top ul .tim{                        /*设置时间数字的样式*/
+    color: #fff;                      /*设置文字颜色*/
+    background: #2e2e2e;              /*设置背景颜色*/
+}
+.bottom>div{                          /*设置图片和文字内容的公共样式*/
+    padding-top: 10px;                 /*设置上边距*/
+    float: left;                       /*设置浮动*/
+}
+.txt>p{                                /*设置文字部分的样式*/
+    margin-left: 20px;                  /*设置上边距*/
+}
+.txt>:first-child{                    /*设置第一行文字的样式*/
+    font-size: 20px;                    /*设置字号*/
+}
+.txt>:first-child+p{                  /*设置第二行文字样式*/
+    color: #f00;                        /*设置字体颜色*/
+    margin: 20px 20px 15px;             /*设置外边距*/
+}
+.txt>:first-child+p>:last-child{     /*设置描述文字“大码薄款”的样式*/
+    margin-left: 20px;
+}
+.price{                                 /*设置价额部分的样式*/
+    border-top: 1px dashed #AEBDCC;    /*添加上边框*/
+    padding-top: 15px;                   /*设置向上的内间距*/
+}
+
+.price>:first-child{                   /*设置现在价格的样式*/
+    color: #f00;                         /*设置文字颜色*/
+    font-size: 20px;                      /*设置字号*/
+}
+
+.price>:last-child{                     /*设置原价样式*/
+    color: #AEBDCC;                      /*设置文字颜色*/
+    font-size: 14px;                      /*设置字号*/
+    margin-left: 40px;                    /*设置左间距*/
+    text-decoration: line-through;       /*添加删除线*/
+}
+.price+p>input{                          /*按钮的样式*/
+    width: 120px;                          /*设置按钮大小*/
+    height: 30px;
+    margin-top: 20px;                      /*设置上间距*/
+}
+.price+p>:first-child{                  /*设置第一个按钮的样式*/
+    background: none;                     /*添加背景*/
+    font-size: 14px;                      /*设置文字大小*/
+    border: 1px solid #f00;             /*设置边框*/
+}
+.price+p>:last-child{                  /*设置第二个按钮的样式*/
+    background: #f00;                    /*设置背景颜色*/
+    color: #fff;                         /*设置文字颜色*/
+    border: none;                        /*清除边框*/
+}

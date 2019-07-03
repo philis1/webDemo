@@ -1,0 +1,81 @@
+.flex {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    flex: 1
+}
+.shadow {
+    margin-bottom: .1rem;
+    overflow: hidden;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05)
+}
+.g-title {
+    margin: 0 .1rem;
+    padding: 0 .05rem;
+    height: .44rem;
+    line-height: .46rem;
+    font-size: .16rem;
+    color: #666;
+    border-bottom: 1px solid #e3e3e3
+}
+.cbox {
+    display: -o-box;
+    -o-box-align: center;
+    -o-box-pack: center;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center
+}
+a {
+    color: #333;
+    text-decoration: none
+}
+/*!common:static/third_party/ckori/css/reset.css*/
+html, body, div, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, object, code, legend, button, input, textarea, label, th, td, a, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    vertical-align: baseline;
+    word-wrap: break-word
+}
+html {
+    font-size: 100px
+}
+body {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    background-color: #f8f8f8;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    font-size: 100%
+}
+
+:focus {
+    outline: 0
+}
+
+ul, ol, li {
+    list-style: none
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    -webkit-touch-callout: none
+}

@@ -1,0 +1,85 @@
+@charset "utf-8";
+/*css document*/
+* {               /*清除页面中默认的内外边距*/
+	padding: 0;   
+	margin: 0;
+}
+.cont {/*设置页面的整体样式*/
+	margin: 10px 10px;/*设置整体的外边距*/
+	position: relative;/*设置定位方式*/
+}
+[type="text"] {/*设置文本框的样式*/
+	height: 45px;/*设置文本框大小*/
+	width: 300px;
+	font-size: 20px;/*设置字体大小*/
+	border: 1px solid rgb(73,175,79);/*设置边框*/
+}
+[type="image"] {/*设置搜索按钮的样式*/
+	height: 48px;
+	margin-left: -5px;/*设置向左的外边距*/
+	vertical-align: -16px;/*设置按钮的垂直对齐方式*/
+}
+ul {/*设置无序列表的样式*/
+	width: 300px;
+	background: #fff;/*设置背景色为白色*/
+	position: absolute;/*设置定位方式*/
+	display: none;/*设置显示方式*/
+	top: 47px;
+	left: 0;
+}
+ul li {/*设置列表项的具体样式*/
+	list-style: none;/*清除列表的默认样式*/
+	line-height: 40px;/*设置行高*/
+	height: 40px;/*设置每一个列表项的高度*/
+	padding-left: 55px;/*设置列表项的内边距*/
+}
+ul>:first-child {/*设置第一个列表项的样式*/
+	padding-left: 24px;/*设置向左的内边距*/
+	color: #888888;/*设置文字颜色*/
+}
+ul li:hover {/*设置鼠标放置在列表项上时的样式*/
+	color: #888888;/*改变文字颜色*/
+}
+img {/*设置图片样式*/
+	width: 349px;
+}
+/*设置正在加载的动画*/
+.ball {         /*设置动画盒子的整体样式*/
+	width: 240px;/*设置整体大小*/
+	height: 63px;
+	position: absolute;/*设置定位方式*/
+	top: 113px;
+	left: 50px;/*清除页面中默认的内外边距*/
+	text-align: center;/*设置对齐方式*/
+	color: #fff;/*设置文字颜色*/
+	display: none;/*设置显示方式*/
+	background: rgba(0,0,0,0.5)/*设置背景颜色*/
+}
+.ball>p {/*设置加载的提示文字的样式*/
+	line-height: 30px;/*设置行高*/
+}
+.ball>div {/*设置动画中三个小球的样式*/
+	width: 18px;/*设置大小*/
+	height: 18px;
+	background: #1abc9c;/*设置背景颜色*/
+	border-radius: 100%;/*设置圆角边框*/
+	display: inline-block;/*设置其显示方式*/
+	animation: move 1.4s infinite ease-in-out both;/*添加动画*/
+}
+.ball .ball1 {/*设置第一个小球的动画延迟*/
+	animation-delay: 0.16s;
+}
+.ball .ball2 {/*设置第二个小球的动画延迟*/
+	animation-delay: 0.32s;
+}
+ @keyframes move {/*创建动画*/
+ 0% {
+transform: scale(0)
+}
+ 40% {
+transform: scale(1.0)
+}
+ 100% {
+transform: scale(0)
+}
+}

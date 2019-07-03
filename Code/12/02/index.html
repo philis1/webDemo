@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html class="cye-lm">
+<head>
+    <meta charset="utf-8">
+    <title>明日学院</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="keywords"
+          content="明日学院，明日科技，教育，在线课程，优质视频，视频教程，Java，JavaScript，php，C#，Visual Basic，Visual C++，Oracle，JavaWeb，Asp.net">
+    <meta name="description"
+          content="明日学院是吉林省明日科技有限公司研发的在线教育平台，该平台面向学习者提供大量优质视频教程：Java、JavaWeb、JavaScript、VC++、php、C#、Asp.net、Oracle、Visual Basic等，并提供良好的线上服务。">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/head-style.css">
+    <link rel="stylesheet" type="text/css" href="css/Qaptcha.jquery.css">
+    <link rel="stylesheet" type="text/css" href="css/loading.css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.ui.touch.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/Qaptcha.jquery.js"></script>
+    <script type="text/javascript" src="js/jsencrypt.min.js"></script>
+    <script type="text/javascript">var chknameurl = "/Index/User/chkname.html";
+    var setQapTchaurl = "/Index/User/setQapTcha.html";
+    var chkQapTchaurl = "/Index/User/chkQapTcha.html";
+    var chkloginurl = "/Index/User/chkLogin.html";
+    var wxcallback_url = "http://www.mingrisoft.com/";
+    var qurl = "/Index/Index/checkSlider.html";</script>
+</head>
+
+<body>
+<!--新改登录注册页面开始-->
+<!--nav开始-->
+<div class="login_nav">
+    <div class="login_nav_logo">
+        <a href="#">
+            <img src="images/nav_logo.png" width="729" height="92" alt="">
+        </a>
+    </div>
+</div>
+<!--nav结束-->
+<div class="tabPanel_login">
+    <ul>
+        <li class="hit_login"><a href="#">登录</a></li>
+        <li class=""><a href="#">注册</a></li>
+    </ul>
+    <!--登录开始-->
+    <div class="finput-login">
+        <div class="finput-box">
+            <form id="login_form" name="login_form" action="" method="post" class="form" autocomplete="off"
+                  novalidate="novalidate">
+                <input type="password" name="dispassword" autocomplete="off" style="display:none;">
+                <input type="hidden" name="backurl" id="backurl"
+                       value="http://www.mingrisoft.com/Book/newDetails/id/491.html">
+                <div class="f-inputlist m-t40">
+                    <div class="input-box m-b20">
+                        <span class="input-name">账<h></h>号<h></h>：</span>
+                        <input class="required input-name-input" type="text" id="username" name="username"
+                               autocomplete="off" placeholder="用户名/手机/邮箱" aria-required="true">
+                        <span id="chkname" class="warning empty"></span>
+                    </div>
+                    <div class="input-box m-b20">
+                        <span class="input-name cf">密<h></h>码<h></h>：</span>
+                        <input class="input-name-password required" autocomplete="off" type="password" maxlength="30"
+                               name="password" id="password" placeholder="请输入密码" onpaste="return false;"
+                               aria-required="true">
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $("#password").val("");
+                        })</script>
+
+                    <div class="sevenday">
+                        <div class="i-check" style="float:left; margin-left:110px; margin-right:8px; margin-top:8px;">
+                            <input type="checkbox" name="cookie" value="1" id="loga" style="cursor:pointer;" checked="">
+                            <label for="loga"></label>
+                        </div>
+                        <span style="color:#666; font-size:14px;">7天内免登录<span class="login-forget-password">
+											<a href="#" style="color:#36a9e1;" target="_blank">忘记密码</a>
+                        </span>
+                        </span>
+                    </div>
+                    <input type="submit" value="立即登录" class="greenbtn" onfocus="this.blur()" style="border:0px;">
+                </div>
+            </form>
+            <div class="right-loginbox-writetwo">
+                <i></i>
+                <span>其他方式登录</span>
+                <i></i>
+            </div>
+            <div class="right-loginbox-icon">
+                <div class="right-loginbox-button-images">
+                    <a class="third-login" href="#">
+                        <img src="images/qq-logina.png" width="39" height="38" alt="">
+                    </a>
+                </div>
+                <div class="right-loginbox-button-images">
+                    <a href="javascript:;"
+                       onclick="showLoginWindow(this)">
+                        <img src="images/wechat-login.png" width="39" height="38" alt="">
+                    </a>
+                </div>
+                <div class="right-loginbox-button-images">
+                    <a class="third-login" href="#">
+                        <img src="images/microblog-logina.png" width="39" height="38" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--登录结束-->
+</div>
+</body>
+</html>

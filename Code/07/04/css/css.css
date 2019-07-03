@@ -1,0 +1,60 @@
+@charset "utf-8";
+/*css document*/
+*{                       /*清除页面中默认的内外边距*/
+    padding: 0;             
+    margin: 0;              
+}
+.cont{                  /*设置页面的整体样式*/
+    margin: 20px auto;  /*设置整体外边距*/
+    width: 1190px;      /*设置整体宽度*/
+}
+.cont>ul{               /*设置一级导航无序列表的整体样式*/
+    width: 1190px;      /*设置宽度*/
+    height: 50px;       /*设置高度*/
+    background: #777;   /*设置背景颜色*/
+    color: #fff;        /*设置文字颜色*/
+}
+.cont>ul>li{            /*设置一级导航列表项的样式*/
+    width: 170px;       /*设置导航项的宽度*/
+    float: left;        /*设置浮动方式*/
+    line-height: 50px;  /*设置行高*/
+    text-align: center; /*设置文字对齐方式*/
+    list-style: none;   /*清除列表项的默认样式*/
+    font-size: 20px;    /*设置字体大小*/
+    position: relative; /*设置定位方式*/
+}
+.cont>ul>li:hover{      /*设置鼠标放置在一级列表项上的样式*/
+    background: #fff;   /*设置背景颜色*/
+    color: rgb(28,178,156);  /*设置文字颜色*/
+}
+.cont>ul>li:hover ul li{     /*设置鼠标放置在二级列表项上的样式*/
+    display: block;          /*设置二级列表项在页面中显示*/
+}
+.cont>ul>:first-child{       /*设置一级导航栏中第一个列表项的样式*/
+    background: #eee;        /*设置背景颜色*/
+    color: rgb(28,178,156);  /*设置文字颜色*/
+}
+.cont>ul>li>ul{              /*设置二级导航栏的样式*/
+    list-style: none;        /*清除页面中的列表项样式*/
+    color: #000;             /*设置文字颜色*/
+    position: absolute;      /*设置定位方式*/
+    top: 50px;               /*设置垂直距离*/
+    left: 0;                 /*设置水平距离*/
+}              
+.cont>ul>li>ul>li{           /*设置二级导航栏中列表项的样式*/
+    display: none;           /*设置其在页面中隐藏*/
+    padding:0 35px;          /*设置内边距*/
+    background: #fff;        /*设置背景颜色*/
+    clear: both;             /*清除二级导航栏中列表项的浮动*/
+    color: #000;             /*设置文字颜色*/
+}              
+.cont>ul>li>ul>li:hover{     /*鼠标防止在二级导航栏列表项上时的样式*/
+	background: #c0ff00;     /*设置背景颜色*/
+}              
+div img{                     /*设置图片样式*/
+    width: 1191px;           /*设置宽度*/
+}
+
+
+
+

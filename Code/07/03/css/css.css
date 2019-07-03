@@ -1,0 +1,79 @@
+@charset "utf-8";
+/*css document*/
+*{                             /*清除页面中默认的内外边距*/
+    margin: 0;
+    padding: 0;
+}
+.cont{                        /*设置页面的整体样式*/
+    width: 800px;            /*设置整体宽度*/
+    margin: 0 auto;           /*设置外边距*/
+    border: 1px solid #dbdbdb;/*设置边框*/
+}
+nav{                          /*设置导航栏整体样式*/
+    height: 35px;             /*设置高度*/
+}
+nav ul li{                    /*设置导航列表项的样式*/
+    list-style: none;         /*清除列表样式*/
+    float: left;              /*设置浮动方式*/
+    padding: 0 20px;          /*设置内边距*/
+    line-height: 35px;        /*设置行高*/
+    color: #777;              /*设置文字颜色*/
+}
+nav ul>:first-child{          /*设置导航中第一个列表项的样式*/
+    margin: 0 10px;           /*设置外边距*/
+    font-size: 20px;          /*设置字体大小*/
+    padding-left: 20px;       /*设置向左的内边距*/
+    font-weight: bold;        /*将文字加粗*/
+    color: #000;              /*设置文字颜色*/
+    border-left: 3px solid rgb(28,177,119);/*设置左边框样式*/
+}
+nav ul>:last-child{           /*设置导航中最后一个列表项的样式*/
+    float: right;             /*设置浮动方式*/
+    font-size: 14px;          /*设置字体大小*/
+    padding: 0 20px;          /*设置内边距*/
+}
+nav+div{                      /*设置第二部分的整体样式*/
+    height: 300px;            /*设置高度*/
+}
+.bottom{                      /*添加底部边框*/
+    border-bottom: 1px solid #2b2727;
+}
+.right{                       /*添加有边框*/
+    border-right: 1px solid #2b2727;
+}
+
+dl{                          /*设置定义列表样式*/
+    float: left;             /*设置浮动*/
+    padding: 0px 15px;      /*设置内边距*/
+}
+
+dd,dt{                       /*设置图片和文字的总样式*/
+    float: left;             /*设置浮动*/
+}
+dt img{                      /*设置图片和文字的总样式*/
+    margin-top: 25px;        /*设置向上的外边距*/
+    width: 80px;            /*设置宽度*/
+}
+dt:hover img{                /*设置书包滑过图片时的样式*/
+    transform: translate(20px,0);  /*设置水平向左平移20像素*/
+    transition: 1s ease all; /*设置变换效果为逐渐过渡*/
+}
+dd{                          /*设置文字的样式*/
+
+    width: 250px;            /*设置宽度*/
+}
+dd p{                        /*设置文字的样式*/
+    margin: 15px 5px 0px 10px;   /*设置文字外边距*/
+}
+dd>:first-child{             /*设置图书名称样式*/
+    font-weight: bold;       /*设置文字粗细*/
+}
+.color>:last-child{          /*设置“正在学习”四个字向右浮动*/
+    float: right;                         
+}
+.color>span>:first-child{    /*设置数字的样式*/
+    color:rgb(28,177,119) ;  /*设置文字颜色*/
+}
+dd>:last-child{                         
+    color:rgb(28,177,119) ;                         
+}

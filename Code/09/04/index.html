@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>模拟12306图片验证码</title>
+    <style type="text/css">
+        .marker {
+            position: absolute;
+            width: 26px;
+            height: 26px;
+            background: url(images/marker.png) no-repeat;
+        }
+        .refresh {
+            width: 53px;
+            height: 22px;
+            right: 3px;
+            top: 0;
+            cursor: pointer;
+            position: absolute;
+            background: url(images/refresh.png) no-repeat;
+        }
+    </style>
+</head>
+<body>
+<button class="verify">验证</button>
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        Code.init();
+        $(document).on("click", "#codeContainer canvas", function (event) {
+            createInput(convertPoint($(this), event.pageX, event.pageY));
+            createMarker(event.pageX, event.pageY);
+        })
+        $(".verify").on("click", function () {
+            var code = [];
+            $(".code-value").each(function () {
+                code.push(JSON.parse($(this).val()));
+            });
+            Code.verify(code, reset);
+        });
+        $(".refresh").on("click", function () {
+            Code.reload();
+            reset();
+        })
+        function createInput(point) {
+            $("<input />").attr({
+                value: JSON.stringify(point),
+                class: 'code-value'
+            }).appendTo("body").hide();
+        }
+
+        function reset() {
+            $(".code-value").remove();
+            $(".marker").remove();
+        }
+
+        function createMarker(x, y) {
+            $("<div />").attr({
+                class: 'marker',
+            }).css({
+                left: x - 13,
+                top: y - 13
+            }).appendTo('body');
+        }
+
+        function convertPoint(elem, x, y) {
+            var offset = elem.offset();
+            return {
+                x: x - offset.left,
+                y: y - offset.top
+            }
+        }
+    });
+
+</script>
+</body>
+</html>

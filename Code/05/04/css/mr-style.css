@@ -1,0 +1,56 @@
+@charset "utf-8";
+/*css document*/
+*{                            /*清除页面中默认的内外间距*/
+    margin: 0;
+    padding: 0;
+}
+.cont{                        /*设置页面的整体样式*/
+    width: 720px;             /*设置宽度*/
+    margin: 0 auto;           /*设置页面整体外间距*/
+    line-height: 40px;        /*设置文字的行高*/
+}
+h3{                           /*设置页面标题的样式*/
+    padding: 20px 0;          /*设置其内间距*/
+}
+.say :last-child{             /*设置“反馈须知”的样式*/
+    height: 60px;             /*设置高度*/
+    background: #f7f1f1;      /*设置背景颜色*/
+    line-height: 60px;        /*设置行高*/
+}
+.question,.contest{           /*设置问题描述部分以及联系方式部分的样式*/
+    margin-top: 40px;         /*设置向上的外边距*/
+}
+.question>:first-child>p>:first-child,.contest>p>:first-child,.question>:last-child>p>:last-child span{
+    color: #f00;             /*设置星号以及关键字的文字颜色为红色*/
+}
+.question div p>:last-child,.contest>:first-child>:last-child{
+    color: rgb(159,161,154);  /*清除页面中默认的内外间距*/
+}
+.btn{                         /*设置按钮的整体样式*/
+    position: relative;       /*设置定位方式*/
+}
+
+.btn [type="file"]{           /*设置文件域的样式*/
+    padding: 5px;             /*设置内间距*/
+    position: absolute;       /*设置定位方式为绝对定位*/
+    top:0;             
+    left: 0;             
+    opacity: 0;               /*将其设为透明*/
+}             
+[type="text"]{             /*设置单行文本框的样式*/
+    height: 30px;             /*设置其大小*/
+    width: 695px;             
+}
+[type="file"],[type="button"]{             /*设置提交按钮、文件域以及按钮的公共样式*/
+    width: 110px;             /*设置其大小*/
+    height: 35px;  
+	font-size: 18px;
+	font-weight: bolder;
+    color: #00b0f0;             /*设置文字颜色*/
+    border: 0;             /*清除边框*/
+}
+[type="image"]{               /*设置图片按钮的样式*/
+    margin-left:500px;
+	width: 120px;             /*设置其大小*/
+	margin-top: 30px
+}
